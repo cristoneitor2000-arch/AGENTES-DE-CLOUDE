@@ -1,0 +1,55 @@
+{
+  "_leeme": "Convenciones de capas y trazo de Chris. Se editan aqui sin tocar el codigo. Fuente: skills cuantificar-mamposteria-cad (gen/est.py, est.lsp), qa-dxf-cuantificacion (qa_dxf.py) y dxf-unificado-cuantificacion.",
+  "machote": {
+    "capa": "00",
+    "color": 8,
+    "bloquear": true,
+    "bloquear_capas_originales": true,
+    "_nota": "Todo el espacio modelo de la copia pasa a la capa 00 (como cq:mach2). El reconocimiento lee las capas originales ANTES de moverlas."
+  },
+  "muro": {
+    "capa": "{nivel} Muro de {cm}cm",
+    "color": 1,
+    "transparencia": 0.5,
+    "bloque": "xMuro {cm}",
+    "color_atributos": 250,
+    "_nota": "ezdxf no crea el xMuro dinamico: bloque estatico por espesor (rectangulo de 1 m x espesor + hatch solido, dentro del bloque) insertado con escala X = largo en m, con atributos ID, TIPO, ESPESOR, LARGO, ALTO, AREA. En la capa del muro solo hay INSERT (pasa QA R10)."
+  },
+  "vano_puerta": {
+    "capa": "{nivel} Muro de {cm}cm - Vano puerta",
+    "color": 42,
+    "transparencia": 0.5
+  },
+  "cimiento": {
+    "capa": "Cimiento corrido {tipo} de {ancho} x {peralte} m",
+    "transparencia": 0.5,
+    "corrido_por_vanos": true,
+    "al_fondo": true,
+    "reglas": {},
+    "_reglas_formato": {
+      "0.15": {"con_cimiento": true, "tipo": "CC1", "ancho": 0.40, "peralte": 0.20, "color": 2},
+      "0.10": {"con_cimiento": false}
+    },
+    "_nota": "PENDIENTE: Chris debe llenar 'reglas' (clave = espesor del muro con 2 decimales). Un espesor sin regla NO se inventa: su cimiento va a REVISION. '_reglas_formato' es solo un ejemplo del formato y el programa lo ignora."
+  },
+  "esquinas": {
+    "muro_L": "mas_largo_toma_esquina",
+    "muro_T": "hasta_cara_del_corrido",
+    "muro_cruz": "mas_largo_continuo",
+    "cimiento_L": "cruce_de_ejes",
+    "cimiento_T": "hasta_cara_del_cimiento_que_cruza",
+    "_nota": "[Supuesto] regla propuesta y no confirmada todavia por Chris (punto 5). Muros sin traslapes: muro | vano | muro."
+  },
+  "revision": {
+    "capa": "REVISION",
+    "color": 1,
+    "radio": 0.25,
+    "altura_texto": 0.10
+  },
+  "grupos": {
+    "raiz": "CUANTIFICACION",
+    "muros": "MUROS",
+    "muros_nivel": "MUROS {nivel}",
+    "cimiento": "CIMIENTO CORRIDO"
+  }
+}

@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv_build/
+build/
+dist/
+*.spec
+SALIDA_*/
+!ejemplos/SALIDA_*/

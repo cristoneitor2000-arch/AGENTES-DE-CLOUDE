@@ -1,0 +1,34 @@
+{
+  "_leeme": "Parametros del programa (no son convenciones de capa). Distancias en metros, angulos en grados.",
+  "oda_exe": "C:\\Program Files\\ODA\\ODAFileConverter\\ODAFileConverter.exe",
+  "oda_version_salida": "ACAD2018",
+  "carpeta_salida": "",
+  "espesores": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "tol_espesor": 0.005,
+  "tol_angular": 0.5,
+  "tol_colineal": 0.002,
+  "union_max": 0.25,
+  "vano_min": 0.6,
+  "vano_max": 2.05,
+  "vano_en_extremo": true,
+  "umbral_eje_corto": 0.2,
+  "tol_snap": 0.03,
+  "angulo_min_esquina": 10.0,
+  "residuo_min": 0.05,
+  "sep_busqueda_max": 0.6,
+  "nivel": "N1",
+  "comparacion": {
+    "_nota": "Patrones (regex) para leer las capas de la cuantificacion a mano. Ajustar a los nombres reales de Chris.",
+    "patrones": {
+      "vano": "Muro de (\\d+)\\s*cm.*Vano",
+      "muro": "Muro de (\\d+)\\s*cm",
+      "cimiento": "Cimiento corrido"
+    },
+    "dist_eje": 0.1,
+    "tol_angular": 5.0
+  }
+}
