@@ -1,5 +1,5 @@
 {
-  "_leeme": "Parametros del programa (no son convenciones de capa). Distancias en metros, angulos en grados.",
+  "_leeme": "Parametros del programa (no son convenciones de capa). Distancias en metros, angulos en grados. Vano de puerta 0.70-1.50 descontando columnas (Chris, punto 6). Emplantillado y doble hilada: skill cuantificar-mamposteria-cad (jsot_runs/jsot_corr). ventana = [x0,y0,x1,y1] en m o null.",
   "oda_exe": "C:\\Program Files\\ODA\\ODAFileConverter\\ODAFileConverter.exe",
   "oda_version_salida": "ACAD2018",
   "carpeta_salida": "",
@@ -12,8 +12,8 @@
   "tol_angular": 0.5,
   "tol_colineal": 0.002,
   "union_max": 0.25,
-  "vano_min": 0.6,
-  "vano_max": 2.05,
+  "vano_min": 0.7,
+  "vano_max": 1.5,
   "vano_en_extremo": true,
   "umbral_eje_corto": 0.2,
   "tol_snap": 0.03,
@@ -24,11 +24,26 @@
   "comparacion": {
     "_nota": "Patrones (regex) para leer las capas de la cuantificacion a mano. Ajustar a los nombres reales de Chris.",
     "patrones": {
-      "vano": "Muro de (\\d+)\\s*cm.*Vano",
-      "muro": "Muro de (\\d+)\\s*cm",
-      "cimiento": "Cimiento corrido"
+      "vano": "Muro de (?:contencion de )?(\\d+)\\s*cm.*Vano",
+      "muro": "Muro de (?:contencion de )?(\\d+)\\s*cm",
+      "cimiento": "Cimiento corrido",
+      "excluir": "^Pin "
     },
     "dist_eje": 0.1,
-    "tol_angular": 5.0
-  }
+    "tol_angular": 5.0,
+    "dist_eje_cimiento": 0.5
+  },
+  "tol_banda": 0.02,
+  "tol_ancho_block": 0.015,
+  "block_largo_min": 0.15,
+  "block_largo_max": 0.6,
+  "block_ancho_max": 0.26,
+  "doble_hilada_sep_min": 0.12,
+  "doble_hilada_sep_max": 0.19,
+  "doble_hilada_espesor": 0.3,
+  "doble_hilada_absorber": 0.45,
+  "toque_mocheta": 0.095,
+  "mocheta_extremo": 0.35,
+  "ventana": null,
+  "doble_hilada_union": 2.05
 }

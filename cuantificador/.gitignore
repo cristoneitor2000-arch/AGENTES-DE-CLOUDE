@@ -6,3 +6,4 @@ dist/
 *.spec
 SALIDA_*/
 !ejemplos/SALIDA_*/
+!resultados/**/SALIDA_*/

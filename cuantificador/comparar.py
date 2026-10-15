@@ -25,10 +25,13 @@ from openpyxl import Workbook, load_workbook
 
 from extraccion import FB, _fila, _hoja
 
-PATRONES = {"vano": r"Muro de (\d+)\s*cm.*Vano", "muro": r"Muro de (\d+)\s*cm", "cimiento": r"Cimiento corrido"}
+PATRONES = {"vano": r"Muro de (?:contencion de )?(\d+)\s*cm.*Vano", "muro": r"Muro de (?:contencion de )?(\d+)\s*cm",
+            "cimiento": r"Cimiento corrido", "excluir": r"^Pin "}
 
 
 def clase_de_capa(capa, pat):
+    if pat.get("excluir") and re.search(pat["excluir"], capa, re.I):
+        return None
     if re.search(pat["vano"], capa, re.I):
         return f"Vano {int(re.search(pat['vano'], capa, re.I).group(1))}cm"
     m = re.search(pat["muro"], capa, re.I)
@@ -36,7 +39,8 @@ def clase_de_capa(capa, pat):
         return f"Muro {int(m.group(1))}cm"
     if re.search(pat["cimiento"], capa, re.I):
         a = re.search(r"de\s+(\d+(?:[.,]\d+)?)\s*[x×]", capa, re.I)
-        return f"Cimiento {float(a.group(1).replace(',', '.')):.2f}" if a else f"Cimiento ({capa})"
+        dz = " dentro de zapata" if re.search(r"dentro de zapata", capa, re.I) else ""
+        return (f"Cimiento {float(a.group(1).replace(',', '.')):.2f}" if a else f"Cimiento ({capa})") + dz
     return None
 
 
@@ -67,18 +71,12 @@ def elementos(ruta, factor, pat):
             lineas += 1
             continue
         if t == "INSERT":
-            pts = _puntos(e)
-            if not pts:
-                continue
-            r = math.radians(e.dxf.rotation)
-            u, v = (math.cos(r), math.sin(r)), (-math.sin(r), math.cos(r))
-            pu = [p[0] * u[0] + p[1] * u[1] for p in pts]
-            pv = [p[0] * v[0] + p[1] * v[1] for p in pts]
-            a, b = min(pu), max(pu)
-            cv = (min(pv) + max(pv)) / 2
-            p0 = (u[0] * a + v[0] * cv, u[1] * a + v[1] * cv)
-            p1 = (u[0] * b + v[0] * cv, u[1] * b + v[1] * cv)
-            out.append(_el(cl, e, p0, p1, factor))
+            # El xMuro dinámico va con rotación 0 (el ángulo está en Ang_Muro) y trae, además del cuerpo del muro,
+            # rectángulos de fondo de los rótulos: se toma la polilínea cerrada cuyo ancho coincide con el espesor
+            # de la clase (Muro 15cm -> 0.15); si la clase no trae espesor, la de mayor largo.
+            eje = _eje_insert(e, cl, factor)
+            if eje:
+                out.append(_el(cl, e, eje[0], eje[1], factor))
         elif t in ("LWPOLYLINE", "POLYLINE"):
             pts = [tuple(p)[:2] for p in (e.vertices_in_wcs() if t == "LWPOLYLINE" else [v.dxf.location for v in e.vertices])]
             cerrada = e.closed if t == "LWPOLYLINE" else e.is_closed
@@ -96,6 +94,56 @@ def elementos(ruta, factor, pat):
                     if math.dist(a, b) > 1e-9:
                         out.append(_el(cl, e, a, b, factor))
     return out, lineas
+
+
+def _cerradas(e):
+    for v in e.virtual_entities():
+        t = v.dxftype()
+        if t == "LWPOLYLINE" and v.closed:
+            yield [tuple(p)[:2] for p in v.vertices_in_wcs()]
+        elif t == "POLYLINE" and v.is_closed:
+            yield [tuple(p.dxf.location)[:2] for p in v.vertices]
+        elif t == "INSERT":
+            yield from _cerradas(v)
+
+
+def _eje_insert(e, cl, f):
+    m = re.search(r"(\d+)cm", cl)
+    esp = int(m.group(1)) / 100 if m else None
+    cands = []
+    for pts in _cerradas(e):
+        if len(pts) < 3:
+            continue
+        p0, p1 = _eje_rectangulo(pts)
+        from shapely.geometry import MultiPoint
+        r = MultiPoint(pts).minimum_rotated_rectangle
+        largo = math.dist(p0, p1)
+        ancho = r.area / largo if largo > 0 else 0
+        cands.append((p0, p1, largo * f, ancho * f))
+    if not cands:
+        pts = [(p[0], p[1]) for p in _puntos(e)]
+        return _eje_rectangulo(pts) if len(pts) >= 2 else None
+    if esp is not None:
+        c = min(cands, key=lambda c: (abs(c[3] - esp) > 0.02, -c[2]))
+    else:
+        c = max(cands, key=lambda c: c[2])
+    return c[0], c[1]
+
+
+def _eje_rectangulo(pts):
+    """Eje (línea media de los lados largos) del rectángulo mínimo rotado que contiene los puntos."""
+    from shapely.geometry import MultiPoint
+    r = MultiPoint(pts).minimum_rotated_rectangle
+    if r.geom_type != "Polygon":
+        c = list(r.coords)
+        return c[0], c[-1]
+    c = list(r.exterior.coords)[:4]
+    l0, l1 = math.dist(c[0], c[1]), math.dist(c[1], c[2])
+    if l0 >= l1:
+        a, b, cc, d = c[0], c[1], c[2], c[3]
+    else:
+        a, b, cc, d = c[1], c[2], c[3], c[0]
+    return ((a[0] + d[0]) / 2, (a[1] + d[1]) / 2), ((b[0] + cc[0]) / 2, (b[1] + cc[1]) / 2)
 
 
 def _el(cl, e, p0, p1, f):
@@ -176,10 +224,12 @@ def comparar(mio, manual, salida, factor=1.0, excel=None, cfg=None):
     dist_eje, ang = c.get("dist_eje", 0.10), c.get("tol_angular", 5.0)
     A, la = elementos(mio, factor, pat)
     M, lm = elementos(manual, factor, pat)
+    dist_cim = c.get("dist_eje_cimiento", 0.50)   # el cimiento puede ir excéntrico respecto del muro
+    de = lambda e: dist_cim if e["clase"].startswith("Cimiento") else dist_eje
     for e in A:
-        e["cob"] = cubierto(e, M, dist_eje, ang)
+        e["cob"] = cubierto(e, M, de(e), ang)
     for e in M:
-        e["cob"] = cubierto(e, A, dist_eje, ang)
+        e["cob"] = cubierto(e, A, de(e), ang)
     ex, nfx = excel_manual(excel, pat) if excel else ({}, 0)
     clases = sorted({e["clase"] for e in A + M} | set(ex))
 
@@ -221,7 +271,7 @@ def comparar(mio, manual, salida, factor=1.0, excel=None, cfg=None):
             r += 1
     wp = _hoja(wb, "PARAMETROS", [("Parámetro", 30), ("Valor", 80)])
     for i, (k, v) in enumerate([("DXF automático", mio), ("DXF a mano", manual), ("Excel a mano", excel or "(no)"),
-                                ("Filas leídas del Excel", nfx), ("Factor a metros", factor), ("Distancia máxima entre ejes (m)", dist_eje),
+                                ("Filas leídas del Excel", nfx), ("Factor a metros", factor), ("Distancia máxima entre ejes (m)", dist_eje), ("Distancia máxima entre ejes de cimiento (m)", dist_cim),
                                 ("Tolerancia angular (°)", ang), ("LINE en capas (no sumadas) automático / a mano", f"{la} / {lm}"),
                                 ("Patrones de capa", json.dumps(pat, ensure_ascii=False))], start=2):
         _fila(wp, i, [k, v])

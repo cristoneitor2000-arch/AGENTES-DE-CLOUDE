@@ -13,6 +13,9 @@ from shapely.ops import unary_union
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 CAPA = "A-MURO"
+ETIQUETAS = [("CC1", (2, -0.6)), ("CC1", (12, -0.6)), ("CC1", (9.4, 1.5)), ("CC1", (21.5, -0.6)), ("CC1", (23.6, 1.5)),
+             ("MC1", (61.5, -0.6)), ("CC1", (31, -0.6)), ("CC1", (32.4, 1.2)), ("CC1", (41, -0.6)),
+             ("CC1", (91.5, -0.6)), ("CC1", (94.6, 1.2))]
 
 
 def rect(p0, p1, t):
@@ -74,6 +77,9 @@ def crear(ruta):
     # 9 vano en extremo libre: muro (90,0)-(93,0) y muro perpendicular x=94 de y=-2 a 2 -> hueco 0.925
     dibujar(msp, [rect((90, 0), (93, 0), 0.15)], "line")
     dibujar(msp, [rect((94, -2), (94, 2), 0.15)])
+    # etiquetas de cimiento (tipos de PRUEBA: CC1 en muros de 0.15, MC1 en el de 0.20; el de 0.10 no lleva)
+    for txt, (x, y) in ETIQUETAS:
+        msp.add_text(txt, dxfattribs={"layer": "A-TEXTO-CIM", "height": 0.2}).set_placement((x, y))
     # machote: textos y una línea en capa 0 (deben ir a 00)
     msp.add_text("PLANTA DE PRUEBA", dxfattribs={"layer": "A-TEXTO", "height": 0.3}).set_placement((0, 5))
     msp.add_line((0, -3), (100, -3), dxfattribs={"layer": "0"})
@@ -81,5 +87,45 @@ def crear(ruta):
     return ruta
 
 
+def crear_bloques(ruta):
+    """Emplantillado de blocks (INSERT) de 0.40 x 0.15:
+    A  muro de 0.15 en y=0: blocks 0–2.0 | puerta 0.90 | 2.9–4.9 | columna 0.30 (capa COL) | 5.2–7.2
+    B  doble hilada: fila y=0 de 10.0 a 16.0 y fila y=0.15 de 10.2 a 16.2 -> contención 30 de 10.0 a 16.2
+    C  tabique en capa TABIQUE (blocks de 0.15) de 20 a 22 -> espesor declarado 0.10
+    D  esquina L con columna 0.30 x 0.30 centrada en (30, 0): A horizontal 30.15–34.15, B vertical 0.15–3.35
+    E  zapata (capa ZAP) de 2 x 2 centrada en (3.5, 0): para cimiento dentro de zapata"""
+    doc = ezdxf.new("R2018", setup=True)
+    doc.units = 6
+    doc.header["$INSUNITS"] = 6
+    for c in ("BLK", "TABIQUE", "COL", "ZAP", "TEXTO"):
+        doc.layers.add(c)
+    b = doc.blocks.new("BLOCK 15")
+    b.add_lwpolyline([(-0.2, -0.075), (0.2, -0.075), (0.2, 0.075), (-0.2, 0.075)], close=True)
+    msp = doc.modelspace()
+
+    def fila(x0, x1, y, capa="BLK", vertical=False, x=None):
+        t = x0 + 0.2
+        while t < x1 - 1e-9:
+            if vertical:
+                msp.add_blockref("BLOCK 15", (x, t), dxfattribs={"layer": capa, "rotation": 90})
+            else:
+                msp.add_blockref("BLOCK 15", (t, y), dxfattribs={"layer": capa})
+            t += 0.4
+
+    fila(0, 2.0, 0); fila(2.9, 4.9, 0); fila(5.2, 7.2, 0)
+    msp.add_lwpolyline([(4.9, -0.15), (5.2, -0.15), (5.2, 0.15), (4.9, 0.15)], close=True, dxfattribs={"layer": "COL"})
+    fila(10.0, 16.0, 0); fila(10.2, 16.2, 0.15)
+    fila(20.0, 22.0, 0, "TABIQUE")
+    msp.add_lwpolyline([(29.85, -0.15), (30.15, -0.15), (30.15, 0.15), (29.85, 0.15)], close=True, dxfattribs={"layer": "COL"})
+    fila(30.15, 34.15, 0)
+    fila(0.15, 3.35, None, vertical=True, x=30.0)
+    msp.add_lwpolyline([(2.5, -1), (4.5, -1), (4.5, 1), (2.5, 1)], close=True, dxfattribs={"layer": "ZAP"})
+    for txt, (x, y) in (("CC1", (1.0, -0.8)), ("CC1", (6.2, -0.8)), ("MC1", (13, -0.9)), ("CC1", (32, -0.8)), ("CC1", (30.8, 1.5))):
+        msp.add_text(txt, dxfattribs={"layer": "TEXTO", "height": 0.2}).set_placement((x, y))
+    doc.saveas(ruta)
+    return ruta
+
+
 if __name__ == "__main__":
+    crear_bloques(os.path.join(AQUI, "prueba_bloques.dxf"))
     print(crear(sys.argv[1] if len(sys.argv) > 1 else os.path.join(AQUI, "prueba_muros.dxf")))

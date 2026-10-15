@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.7785300924
+2461329.830960648
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.7785300924
+2461329.830972222
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-17C
+189
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{77132519-82ED-42A7-BFF6-D2D7F435BECA}
+{A256A7E3-677E-489A-9CBF-961E4F542D65}
   9
 $VERSIONGUID
   2
-{A78F79E8-B850-4747-B0A1-131B459E9412}
+{BEAC64F9-9F91-487F-BC57-9ED8C4C3EB49}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -2251,7 +2251,7 @@ LAYER
 102
 {ACAD_XDICTIONARY
 360
-172
+17F
 102
 }
 330
@@ -2385,7 +2385,7 @@ Continuous
   0
 LAYER
   5
-B4
+BF
 330
 1
 100
@@ -2415,7 +2415,7 @@ Machote: plano original
   0
 LAYER
   5
-B6
+C1
 330
 1
 100
@@ -2449,7 +2449,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-B8
+C3
 330
 1
 100
@@ -2483,7 +2483,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-B9
+C4
 330
 1
 100
@@ -2517,7 +2517,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-BA
+C5
 330
 1
 100
@@ -2551,7 +2551,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-BB
+C6
 330
 1
 100
@@ -2559,7 +2559,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Cimiento corrido CC-PRUEBA2 de 0.50 x 0.20 m
+Cimiento corrido MC1 de 0.50 x 0.20 m
  70
 0
  62
@@ -2585,7 +2585,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-BC
+C7
 330
 1
 100
@@ -2593,7 +2593,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
  70
 0
  62
@@ -2619,7 +2619,7 @@ Generado por el cuantificador automático v1
   0
 LAYER
   5
-BD
+C8
 330
 1
 100
@@ -3447,7 +3447,7 @@ ACAD
   0
 APPID
   5
-B1
+BC
 330
 3
 100
@@ -3461,7 +3461,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-B2
+BD
 330
 3
 100
@@ -3475,7 +3475,7 @@ EZDXF
   0
 APPID
   5
-B5
+C0
 330
 3
 100
@@ -3489,7 +3489,7 @@ AcAecLayerStandard
   0
 APPID
   5
-B7
+C2
 330
 3
 100
@@ -5199,7 +5199,7 @@ BLOCK_RECORD
 102
 {ACAD_XDICTIONARY
 360
-170
+17D
 102
 }
 330
@@ -5301,7 +5301,7 @@ _CLOSEDBLANK
   0
 BLOCK_RECORD
   5
-BE
+C9
 330
 9
 100
@@ -5321,7 +5321,7 @@ xMuro 10
   0
 BLOCK_RECORD
   5
-C9
+D4
 330
 9
 100
@@ -5341,7 +5341,7 @@ xMuro 15
   0
 BLOCK_RECORD
   5
-D4
+DF
 330
 9
 100
@@ -5661,356 +5661,6 @@ AcDbBlockEnd
   0
 BLOCK
   5
-BF
-330
-BE
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockBegin
-  2
-xMuro 10
- 70
-2
- 10
-0.0
- 20
-0.0
- 30
-0.0
-  3
-xMuro 10
-  1
-
-  0
-LWPOLYLINE
-  5
-C1
-330
-BE
-100
-AcDbEntity
-  8
-0
-100
-AcDbPolyline
- 90
-4
- 70
-1
- 10
-0.0
- 20
--0.05
- 10
-1.0
- 20
--0.05
- 10
-1.0
- 20
-0.05
- 10
-0.0
- 20
-0.05
-  0
-HATCH
-  5
-C2
-330
-BE
-100
-AcDbEntity
-  8
-0
-100
-AcDbHatch
- 10
-0.0
- 20
-0.0
- 30
-0.0
-210
-0.0
-220
-0.0
-230
-1.0
-  2
-SOLID
- 70
-1
- 71
-0
- 91
-1
- 92
-3
- 72
-0
- 73
-1
- 93
-4
- 10
-0.0
- 20
--0.05
- 10
-1.0
- 20
--0.05
- 10
-1.0
- 20
-0.05
- 10
-0.0
- 20
-0.05
- 97
-0
- 75
-0
- 76
-1
- 98
-0
-  0
-ATTDEF
-  5
-C3
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.15000000000000002
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-ID
- 70
-1
- 71
-1
- 72
-0
-  0
-ATTDEF
-  5
-C4
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.25
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-TIPO
- 70
-1
- 71
-1
- 72
-0
-  0
-ATTDEF
-  5
-C5
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.35000000000000003
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-ESPESOR
- 70
-1
- 71
-1
- 72
-0
-  0
-ATTDEF
-  5
-C6
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.45
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-LARGO
- 70
-1
- 71
-1
- 72
-0
-  0
-ATTDEF
-  5
-C7
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.55
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-ALTO
- 70
-1
- 71
-1
- 72
-0
-  0
-ATTDEF
-  5
-C8
-330
-BE
-100
-AcDbEntity
-  8
-0
- 62
-250
-100
-AcDbText
- 10
-0.0
- 20
--0.6500000000000001
- 30
-0.0
- 40
-0.08
-  1
-
-100
-AcDbAttributeDefinition
-  3
-
-  2
-AREA
- 70
-1
- 71
-1
- 72
-0
-  0
-ENDBLK
-  5
-C0
-330
-BE
-100
-AcDbEntity
-  8
-0
-100
-AcDbBlockEnd
-  0
-BLOCK
-  5
 CA
 330
 C9
@@ -6021,7 +5671,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-xMuro 15
+xMuro 10
  70
 2
  10
@@ -6031,7 +5681,7 @@ xMuro 15
  30
 0.0
   3
-xMuro 15
+xMuro 10
   1
 
   0
@@ -6053,19 +5703,19 @@ AcDbPolyline
  10
 0.0
  20
--0.075
+-0.05
  10
 1.0
  20
--0.075
+-0.05
  10
 1.0
  20
-0.075
+0.05
  10
 0.0
  20
-0.075
+0.05
   0
 HATCH
   5
@@ -6109,19 +5759,19 @@ SOLID
  10
 0.0
  20
--0.075
+-0.05
  10
 1.0
  20
--0.075
+-0.05
  10
 1.0
  20
-0.075
+0.05
  10
 0.0
  20
-0.075
+0.05
  97
 0
  75
@@ -6147,7 +5797,7 @@ AcDbText
  10
 0.0
  20
--0.175
+-0.15000000000000002
  30
 0.0
  40
@@ -6183,7 +5833,7 @@ AcDbText
  10
 0.0
  20
--0.275
+-0.25
  30
 0.0
  40
@@ -6219,7 +5869,7 @@ AcDbText
  10
 0.0
  20
--0.37500000000000006
+-0.35000000000000003
  30
 0.0
  40
@@ -6255,7 +5905,7 @@ AcDbText
  10
 0.0
  20
--0.47500000000000003
+-0.45
  30
 0.0
  40
@@ -6291,7 +5941,7 @@ AcDbText
  10
 0.0
  20
--0.575
+-0.55
  30
 0.0
  40
@@ -6327,7 +5977,7 @@ AcDbText
  10
 0.0
  20
--0.675
+-0.6500000000000001
  30
 0.0
  40
@@ -6371,6 +6021,356 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
+xMuro 15
+ 70
+2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+xMuro 15
+  1
+
+  0
+LWPOLYLINE
+  5
+D7
+330
+D4
+100
+AcDbEntity
+  8
+0
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+0.0
+ 20
+-0.075
+ 10
+1.0
+ 20
+-0.075
+ 10
+1.0
+ 20
+0.075
+ 10
+0.0
+ 20
+0.075
+  0
+HATCH
+  5
+D8
+330
+D4
+100
+AcDbEntity
+  8
+0
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+SOLID
+ 70
+1
+ 71
+0
+ 91
+1
+ 92
+3
+ 72
+0
+ 73
+1
+ 93
+4
+ 10
+0.0
+ 20
+-0.075
+ 10
+1.0
+ 20
+-0.075
+ 10
+1.0
+ 20
+0.075
+ 10
+0.0
+ 20
+0.075
+ 97
+0
+ 75
+0
+ 76
+1
+ 98
+0
+  0
+ATTDEF
+  5
+D9
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.175
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+ID
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ATTDEF
+  5
+DA
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.275
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+TIPO
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ATTDEF
+  5
+DB
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.37500000000000006
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+ESPESOR
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ATTDEF
+  5
+DC
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.47500000000000003
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+LARGO
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ATTDEF
+  5
+DD
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.575
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+ALTO
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ATTDEF
+  5
+DE
+330
+D4
+100
+AcDbEntity
+  8
+0
+ 62
+250
+100
+AcDbText
+ 10
+0.0
+ 20
+-0.675
+ 30
+0.0
+ 40
+0.08
+  1
+
+100
+AcDbAttributeDefinition
+  3
+
+  2
+AREA
+ 70
+1
+ 71
+1
+ 72
+0
+  0
+ENDBLK
+  5
+D6
+330
+D4
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+E0
+330
+DF
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
 xMuro 20
  70
 2
@@ -6387,9 +6387,9 @@ xMuro 20
   0
 LWPOLYLINE
   5
-D7
+E2
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6419,9 +6419,9 @@ AcDbPolyline
   0
 HATCH
   5
-D8
+E3
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6483,9 +6483,9 @@ SOLID
   0
 ATTDEF
   5
-D9
+E4
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6519,9 +6519,9 @@ ID
   0
 ATTDEF
   5
-DA
+E5
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6555,9 +6555,9 @@ TIPO
   0
 ATTDEF
   5
-DB
+E6
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6591,9 +6591,9 @@ ESPESOR
   0
 ATTDEF
   5
-DC
+E7
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6627,9 +6627,9 @@ LARGO
   0
 ATTDEF
   5
-DD
+E8
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6663,9 +6663,9 @@ ALTO
   0
 ATTDEF
   5
-DE
+E9
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -6699,9 +6699,9 @@ AREA
   0
 ENDBLK
   5
-D6
+E1
 330
-D4
+DF
 100
 AcDbEntity
   8
@@ -7647,6 +7647,336 @@ AcDbEntity
 100
 AcDbText
  10
+2.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+2.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B0
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+12.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+12.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B1
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+9.4
+ 20
+1.5
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+9.4
+ 21
+1.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B2
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+21.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+21.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B3
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+23.6
+ 20
+1.5
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+23.6
+ 21
+1.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B4
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+61.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+MC1
+ 11
+61.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B5
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+31.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+31.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B6
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+32.4
+ 20
+1.2
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+32.4
+ 21
+1.2
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B7
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+41.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+41.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B8
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+91.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+91.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B9
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
+94.6
+ 20
+1.2
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+94.6
+ 21
+1.2
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+BA
+330
+17
+100
+AcDbEntity
+  8
+00
+100
+AcDbText
+ 10
 0.0
  20
 5.0
@@ -7667,7 +7997,7 @@ AcDbText
   0
 LINE
   5
-B0
+BB
 330
 17
 100
@@ -7691,13 +8021,13 @@ AcDbLine
   0
 LWPOLYLINE
   5
-DF
+EA
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA2 de 0.50 x 0.20 m
+Cimiento corrido MC1 de 0.50 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7717,13 +8047,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E0
+EB
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7743,13 +8073,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E1
+EC
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7773,13 +8103,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E2
+ED
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7799,13 +8129,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E3
+EE
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7825,13 +8155,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E4
+EF
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7851,13 +8181,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E5
+F0
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7877,13 +8207,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E6
+F1
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7903,13 +8233,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E7
+F2
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7929,13 +8259,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E8
+F3
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7955,13 +8285,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-E9
+F4
 330
 17
 100
 AcDbEntity
   8
-Cimiento corrido CC-PRUEBA1 de 0.40 x 0.20 m
+Cimiento corrido CC1 de 0.40 x 0.20 m
 100
 AcDbPolyline
  90
@@ -7981,7 +8311,7 @@ AcDbPolyline
   0
 INSERT
   5
-EA
+F5
 330
 17
 100
@@ -8005,7 +8335,7 @@ xMuro 20
   0
 ATTRIB
   5
-EC
+F7
 330
 17
 100
@@ -8039,7 +8369,7 @@ ID
   0
 ATTRIB
   5
-ED
+F8
 330
 17
 100
@@ -8073,7 +8403,7 @@ TIPO
   0
 ATTRIB
   5
-EE
+F9
 330
 17
 100
@@ -8107,7 +8437,7 @@ ESPESOR
   0
 ATTRIB
   5
-EF
+FA
 330
 17
 100
@@ -8141,7 +8471,7 @@ LARGO
   0
 ATTRIB
   5
-F0
+FB
 330
 17
 100
@@ -8175,7 +8505,7 @@ ALTO
   0
 ATTRIB
   5
-F1
+FC
 330
 17
 100
@@ -8209,9 +8539,9 @@ AREA
   0
 SEQEND
   5
-EB
+F6
 330
-EA
+F5
 100
 AcDbEntity
   8
@@ -8219,7 +8549,7 @@ N1 Muro de 20cm
   0
 INSERT
   5
-F2
+FD
 330
 17
 100
@@ -8243,7 +8573,7 @@ xMuro 15
   0
 ATTRIB
   5
-F4
+FF
 330
 17
 100
@@ -8277,7 +8607,7 @@ ID
   0
 ATTRIB
   5
-F5
+100
 330
 17
 100
@@ -8311,7 +8641,7 @@ TIPO
   0
 ATTRIB
   5
-F6
+101
 330
 17
 100
@@ -8345,7 +8675,7 @@ ESPESOR
   0
 ATTRIB
   5
-F7
+102
 330
 17
 100
@@ -8379,7 +8709,7 @@ LARGO
   0
 ATTRIB
   5
-F8
+103
 330
 17
 100
@@ -8413,7 +8743,7 @@ ALTO
   0
 ATTRIB
   5
-F9
+104
 330
 17
 100
@@ -8447,9 +8777,9 @@ AREA
   0
 SEQEND
   5
-F3
+FE
 330
-F2
+FD
 100
 AcDbEntity
   8
@@ -8457,7 +8787,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-FA
+105
 330
 17
 100
@@ -8471,17 +8801,17 @@ AcDbBlockReference
   2
 xMuro 15
  10
-9.925
+10.075
  20
 0.0
  30
 0.0
  41
-4.074999999999999
+3.9250000000000007
   0
 ATTRIB
   5
-FC
+107
 330
 17
 100
@@ -8493,7 +8823,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.1
  30
@@ -8515,7 +8845,7 @@ ID
   0
 ATTRIB
   5
-FD
+108
 330
 17
 100
@@ -8527,7 +8857,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.2
  30
@@ -8549,7 +8879,7 @@ TIPO
   0
 ATTRIB
   5
-FE
+109
 330
 17
 100
@@ -8561,7 +8891,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.30000000000000004
  30
@@ -8583,7 +8913,7 @@ ESPESOR
   0
 ATTRIB
   5
-FF
+10A
 330
 17
 100
@@ -8595,7 +8925,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.4
  30
@@ -8603,7 +8933,7 @@ AcDbText
  40
 0.08
   1
-4.0750
+3.9250
 100
 AcDbAttribute
   2
@@ -8617,7 +8947,7 @@ LARGO
   0
 ATTRIB
   5
-100
+10B
 330
 17
 100
@@ -8629,7 +8959,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.5
  30
@@ -8651,7 +8981,7 @@ ALTO
   0
 ATTRIB
   5
-101
+10C
 330
 17
 100
@@ -8663,7 +8993,7 @@ N1 Muro de 15cm
 100
 AcDbText
  10
-9.925
+10.075
  20
 -0.6000000000000001
  30
@@ -8671,7 +9001,7 @@ AcDbText
  40
 0.08
   1
-11.4100
+10.9900
 100
 AcDbAttribute
   2
@@ -8685,9 +9015,9 @@ AREA
   0
 SEQEND
   5
-FB
+106
 330
-FA
+105
 100
 AcDbEntity
   8
@@ -8695,7 +9025,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-102
+10D
 330
 17
 100
@@ -8719,7 +9049,7 @@ xMuro 15
   0
 ATTRIB
   5
-104
+10F
 330
 17
 100
@@ -8753,7 +9083,7 @@ ID
   0
 ATTRIB
   5
-105
+110
 330
 17
 100
@@ -8787,7 +9117,7 @@ TIPO
   0
 ATTRIB
   5
-106
+111
 330
 17
 100
@@ -8821,7 +9151,7 @@ ESPESOR
   0
 ATTRIB
   5
-107
+112
 330
 17
 100
@@ -8855,7 +9185,7 @@ LARGO
   0
 ATTRIB
   5
-108
+113
 330
 17
 100
@@ -8889,7 +9219,7 @@ ALTO
   0
 ATTRIB
   5
-109
+114
 330
 17
 100
@@ -8923,9 +9253,9 @@ AREA
   0
 SEQEND
   5
-103
+10E
 330
-102
+10D
 100
 AcDbEntity
   8
@@ -8933,7 +9263,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-10A
+115
 330
 17
 100
@@ -8957,7 +9287,7 @@ xMuro 15
   0
 ATTRIB
   5
-10C
+117
 330
 17
 100
@@ -8991,7 +9321,7 @@ ID
   0
 ATTRIB
   5
-10D
+118
 330
 17
 100
@@ -9025,7 +9355,7 @@ TIPO
   0
 ATTRIB
   5
-10E
+119
 330
 17
 100
@@ -9059,7 +9389,7 @@ ESPESOR
   0
 ATTRIB
   5
-10F
+11A
 330
 17
 100
@@ -9093,7 +9423,7 @@ LARGO
   0
 ATTRIB
   5
-110
+11B
 330
 17
 100
@@ -9127,7 +9457,7 @@ ALTO
   0
 ATTRIB
   5
-111
+11C
 330
 17
 100
@@ -9161,9 +9491,9 @@ AREA
   0
 SEQEND
   5
-10B
+116
 330
-10A
+115
 100
 AcDbEntity
   8
@@ -9171,7 +9501,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-112
+11D
 330
 17
 100
@@ -9195,7 +9525,7 @@ xMuro 15
   0
 ATTRIB
   5
-114
+11F
 330
 17
 100
@@ -9229,7 +9559,7 @@ ID
   0
 ATTRIB
   5
-115
+120
 330
 17
 100
@@ -9263,7 +9593,7 @@ TIPO
   0
 ATTRIB
   5
-116
+121
 330
 17
 100
@@ -9297,7 +9627,7 @@ ESPESOR
   0
 ATTRIB
   5
-117
+122
 330
 17
 100
@@ -9331,7 +9661,7 @@ LARGO
   0
 ATTRIB
   5
-118
+123
 330
 17
 100
@@ -9365,7 +9695,7 @@ ALTO
   0
 ATTRIB
   5
-119
+124
 330
 17
 100
@@ -9399,9 +9729,9 @@ AREA
   0
 SEQEND
   5
-113
+11E
 330
-112
+11D
 100
 AcDbEntity
   8
@@ -9409,7 +9739,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-11A
+125
 330
 17
 100
@@ -9433,7 +9763,7 @@ xMuro 15
   0
 ATTRIB
   5
-11C
+127
 330
 17
 100
@@ -9467,7 +9797,7 @@ ID
   0
 ATTRIB
   5
-11D
+128
 330
 17
 100
@@ -9501,7 +9831,7 @@ TIPO
   0
 ATTRIB
   5
-11E
+129
 330
 17
 100
@@ -9535,7 +9865,7 @@ ESPESOR
   0
 ATTRIB
   5
-11F
+12A
 330
 17
 100
@@ -9569,7 +9899,7 @@ LARGO
   0
 ATTRIB
   5
-120
+12B
 330
 17
 100
@@ -9603,7 +9933,7 @@ ALTO
   0
 ATTRIB
   5
-121
+12C
 330
 17
 100
@@ -9637,9 +9967,9 @@ AREA
   0
 SEQEND
   5
-11B
+126
 330
-11A
+125
 100
 AcDbEntity
   8
@@ -9647,7 +9977,7 @@ N1 Muro de 15cm - Vano puerta
   0
 INSERT
   5
-122
+12D
 330
 17
 100
@@ -9671,7 +10001,7 @@ xMuro 15
   0
 ATTRIB
   5
-124
+12F
 330
 17
 100
@@ -9705,7 +10035,7 @@ ID
   0
 ATTRIB
   5
-125
+130
 330
 17
 100
@@ -9739,7 +10069,7 @@ TIPO
   0
 ATTRIB
   5
-126
+131
 330
 17
 100
@@ -9773,7 +10103,7 @@ ESPESOR
   0
 ATTRIB
   5
-127
+132
 330
 17
 100
@@ -9807,7 +10137,7 @@ LARGO
   0
 ATTRIB
   5
-128
+133
 330
 17
 100
@@ -9841,7 +10171,7 @@ ALTO
   0
 ATTRIB
   5
-129
+134
 330
 17
 100
@@ -9875,9 +10205,9 @@ AREA
   0
 SEQEND
   5
-123
+12E
 330
-122
+12D
 100
 AcDbEntity
   8
@@ -9885,7 +10215,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-12A
+135
 330
 17
 100
@@ -9909,7 +10239,7 @@ xMuro 15
   0
 ATTRIB
   5
-12C
+137
 330
 17
 100
@@ -9943,7 +10273,7 @@ ID
   0
 ATTRIB
   5
-12D
+138
 330
 17
 100
@@ -9977,7 +10307,7 @@ TIPO
   0
 ATTRIB
   5
-12E
+139
 330
 17
 100
@@ -10011,7 +10341,7 @@ ESPESOR
   0
 ATTRIB
   5
-12F
+13A
 330
 17
 100
@@ -10045,7 +10375,7 @@ LARGO
   0
 ATTRIB
   5
-130
+13B
 330
 17
 100
@@ -10079,7 +10409,7 @@ ALTO
   0
 ATTRIB
   5
-131
+13C
 330
 17
 100
@@ -10113,9 +10443,9 @@ AREA
   0
 SEQEND
   5
-12B
+136
 330
-12A
+135
 100
 AcDbEntity
   8
@@ -10123,7 +10453,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-132
+13D
 330
 17
 100
@@ -10147,7 +10477,7 @@ xMuro 15
   0
 ATTRIB
   5
-134
+13F
 330
 17
 100
@@ -10181,7 +10511,7 @@ ID
   0
 ATTRIB
   5
-135
+140
 330
 17
 100
@@ -10215,7 +10545,7 @@ TIPO
   0
 ATTRIB
   5
-136
+141
 330
 17
 100
@@ -10249,7 +10579,7 @@ ESPESOR
   0
 ATTRIB
   5
-137
+142
 330
 17
 100
@@ -10283,7 +10613,7 @@ LARGO
   0
 ATTRIB
   5
-138
+143
 330
 17
 100
@@ -10317,7 +10647,7 @@ ALTO
   0
 ATTRIB
   5
-139
+144
 330
 17
 100
@@ -10351,9 +10681,9 @@ AREA
   0
 SEQEND
   5
-133
+13E
 330
-132
+13D
 100
 AcDbEntity
   8
@@ -10361,7 +10691,7 @@ N1 Muro de 15cm - Vano puerta
   0
 INSERT
   5
-13A
+145
 330
 17
 100
@@ -10387,7 +10717,7 @@ xMuro 15
   0
 ATTRIB
   5
-13C
+147
 330
 17
 100
@@ -10421,7 +10751,7 @@ ID
   0
 ATTRIB
   5
-13D
+148
 330
 17
 100
@@ -10455,7 +10785,7 @@ TIPO
   0
 ATTRIB
   5
-13E
+149
 330
 17
 100
@@ -10489,7 +10819,7 @@ ESPESOR
   0
 ATTRIB
   5
-13F
+14A
 330
 17
 100
@@ -10523,7 +10853,7 @@ LARGO
   0
 ATTRIB
   5
-140
+14B
 330
 17
 100
@@ -10557,7 +10887,7 @@ ALTO
   0
 ATTRIB
   5
-141
+14C
 330
 17
 100
@@ -10591,9 +10921,9 @@ AREA
   0
 SEQEND
   5
-13B
+146
 330
-13A
+145
 100
 AcDbEntity
   8
@@ -10601,7 +10931,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-142
+14D
 330
 17
 100
@@ -10627,7 +10957,7 @@ xMuro 15
   0
 ATTRIB
   5
-144
+14F
 330
 17
 100
@@ -10661,7 +10991,7 @@ ID
   0
 ATTRIB
   5
-145
+150
 330
 17
 100
@@ -10695,7 +11025,7 @@ TIPO
   0
 ATTRIB
   5
-146
+151
 330
 17
 100
@@ -10729,7 +11059,7 @@ ESPESOR
   0
 ATTRIB
   5
-147
+152
 330
 17
 100
@@ -10763,7 +11093,7 @@ LARGO
   0
 ATTRIB
   5
-148
+153
 330
 17
 100
@@ -10797,7 +11127,7 @@ ALTO
   0
 ATTRIB
   5
-149
+154
 330
 17
 100
@@ -10831,9 +11161,9 @@ AREA
   0
 SEQEND
   5
-143
+14E
 330
-142
+14D
 100
 AcDbEntity
   8
@@ -10841,7 +11171,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-14A
+155
 330
 17
 100
@@ -10867,7 +11197,7 @@ xMuro 15
   0
 ATTRIB
   5
-14C
+157
 330
 17
 100
@@ -10901,7 +11231,7 @@ ID
   0
 ATTRIB
   5
-14D
+158
 330
 17
 100
@@ -10935,7 +11265,7 @@ TIPO
   0
 ATTRIB
   5
-14E
+159
 330
 17
 100
@@ -10969,7 +11299,7 @@ ESPESOR
   0
 ATTRIB
   5
-14F
+15A
 330
 17
 100
@@ -11003,7 +11333,7 @@ LARGO
   0
 ATTRIB
   5
-150
+15B
 330
 17
 100
@@ -11037,7 +11367,7 @@ ALTO
   0
 ATTRIB
   5
-151
+15C
 330
 17
 100
@@ -11071,9 +11401,9 @@ AREA
   0
 SEQEND
   5
-14B
+156
 330
-14A
+155
 100
 AcDbEntity
   8
@@ -11081,7 +11411,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-152
+15D
 330
 17
 100
@@ -11107,7 +11437,7 @@ xMuro 15
   0
 ATTRIB
   5
-154
+15F
 330
 17
 100
@@ -11141,7 +11471,7 @@ ID
   0
 ATTRIB
   5
-155
+160
 330
 17
 100
@@ -11175,7 +11505,7 @@ TIPO
   0
 ATTRIB
   5
-156
+161
 330
 17
 100
@@ -11209,7 +11539,7 @@ ESPESOR
   0
 ATTRIB
   5
-157
+162
 330
 17
 100
@@ -11243,7 +11573,7 @@ LARGO
   0
 ATTRIB
   5
-158
+163
 330
 17
 100
@@ -11277,7 +11607,7 @@ ALTO
   0
 ATTRIB
   5
-159
+164
 330
 17
 100
@@ -11311,9 +11641,9 @@ AREA
   0
 SEQEND
   5
-153
+15E
 330
-152
+15D
 100
 AcDbEntity
   8
@@ -11321,7 +11651,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-15A
+165
 330
 17
 100
@@ -11347,7 +11677,7 @@ xMuro 15
   0
 ATTRIB
   5
-15C
+167
 330
 17
 100
@@ -11381,7 +11711,7 @@ ID
   0
 ATTRIB
   5
-15D
+168
 330
 17
 100
@@ -11415,7 +11745,7 @@ TIPO
   0
 ATTRIB
   5
-15E
+169
 330
 17
 100
@@ -11449,7 +11779,7 @@ ESPESOR
   0
 ATTRIB
   5
-15F
+16A
 330
 17
 100
@@ -11483,7 +11813,7 @@ LARGO
   0
 ATTRIB
   5
-160
+16B
 330
 17
 100
@@ -11517,7 +11847,7 @@ ALTO
   0
 ATTRIB
   5
-161
+16C
 330
 17
 100
@@ -11551,9 +11881,9 @@ AREA
   0
 SEQEND
   5
-15B
+166
 330
-15A
+165
 100
 AcDbEntity
   8
@@ -11561,7 +11891,7 @@ N1 Muro de 15cm
   0
 INSERT
   5
-162
+16D
 330
 17
 100
@@ -11577,17 +11907,17 @@ xMuro 10
  10
 63.0
  20
-0.09999999999999999
+0.049999999999999996
  30
 0.0
  41
-2.9000000000000004
+2.95
  50
 90.0
   0
 ATTRIB
   5
-164
+16F
 330
 17
 100
@@ -11601,7 +11931,7 @@ AcDbText
  10
 63.0
  20
--1.3877787807814457e-17
+-0.05000000000000001
  30
 0.0
  40
@@ -11621,7 +11951,7 @@ ID
   0
 ATTRIB
   5
-165
+170
 330
 17
 100
@@ -11635,7 +11965,7 @@ AcDbText
  10
 63.0
  20
--0.10000000000000002
+-0.15000000000000002
  30
 0.0
  40
@@ -11655,7 +11985,7 @@ TIPO
   0
 ATTRIB
   5
-166
+171
 330
 17
 100
@@ -11669,7 +11999,7 @@ AcDbText
  10
 63.0
  20
--0.20000000000000007
+-0.25000000000000006
  30
 0.0
  40
@@ -11689,7 +12019,7 @@ ESPESOR
   0
 ATTRIB
   5
-167
+172
 330
 17
 100
@@ -11703,13 +12033,13 @@ AcDbText
  10
 63.0
  20
--0.30000000000000004
+-0.35000000000000003
  30
 0.0
  40
 0.08
   1
-2.9000
+2.9500
 100
 AcDbAttribute
   2
@@ -11723,7 +12053,7 @@ LARGO
   0
 ATTRIB
   5
-168
+173
 330
 17
 100
@@ -11737,7 +12067,7 @@ AcDbText
  10
 63.0
  20
--0.4
+-0.45
  30
 0.0
  40
@@ -11757,7 +12087,7 @@ ALTO
   0
 ATTRIB
   5
-169
+174
 330
 17
 100
@@ -11771,13 +12101,13 @@ AcDbText
  10
 63.0
  20
--0.5000000000000001
+-0.55
  30
 0.0
  40
 0.08
   1
-8.1200
+8.2600
 100
 AcDbAttribute
   2
@@ -11791,9 +12121,9 @@ AREA
   0
 SEQEND
   5
-163
+16E
 330
-162
+16D
 100
 AcDbEntity
   8
@@ -11801,7 +12131,61 @@ N1 Muro de 10cm
   0
 CIRCLE
   5
-16A
+175
+330
+17
+100
+AcDbEntity
+  8
+REVISION
+ 62
+1
+100
+AcDbCircle
+ 10
+10.0
+ 20
+0.0
+ 30
+0.0
+ 40
+0.25
+  0
+TEXT
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+REVISION
+ 62
+1
+100
+AcDbText
+ 10
+10.275
+ 20
+0.0
+ 30
+0.0
+ 40
+0.1
+  1
+R001 esquina en L sin mocheta
+ 11
+10.275
+ 21
+0.0
+ 31
+0.0
+100
+AcDbText
+  0
+CIRCLE
+  5
+177
 330
 17
 100
@@ -11823,7 +12207,7 @@ AcDbCircle
   0
 TEXT
   5
-16B
+178
 330
 17
 100
@@ -11843,7 +12227,7 @@ AcDbText
  40
 0.1
   1
-R001 eje muy corto
+R002 eje muy corto
  11
 80.33500000000001
  21
@@ -11855,7 +12239,7 @@ AcDbText
   0
 CIRCLE
   5
-16C
+179
 330
 17
 100
@@ -11877,7 +12261,7 @@ AcDbCircle
   0
 TEXT
   5
-16D
+17A
 330
 17
 100
@@ -11897,7 +12281,7 @@ AcDbText
  40
 0.1
   1
-R002 espesor fuera de lista
+R003 espesor fuera de lista
  11
 71.775
  21
@@ -11909,7 +12293,7 @@ AcDbText
   0
 CIRCLE
   5
-16E
+17B
 330
 17
 100
@@ -11931,7 +12315,7 @@ AcDbCircle
   0
 TEXT
   5
-16F
+17C
 330
 17
 100
@@ -11951,7 +12335,7 @@ AcDbText
  40
 0.1
   1
-R003 segmento sin pareja
+R004 segmento sin pareja
  11
 51.275
  21
@@ -13051,7 +13435,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-B3
+BE
   0
 DICTIONARYVAR
   5
@@ -13063,7 +13447,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:40:51.928092+00:00
+1.4.4 @ 2026-10-15T19:53:16.729908+00:00
   0
 VISUALSTYLE
   5
@@ -19617,7 +20001,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-B3
+BE
 330
 2D
 100
@@ -19625,11 +20009,11 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:41:05.868403+00:00
+1.4.4 @ 2026-10-15T19:56:36.038272+00:00
   0
 DICTIONARY
   5
-170
+17D
 330
 17
 100
@@ -19641,65 +20025,65 @@ AcDbDictionary
   3
 ACAD_SORTENTS
 350
-171
+17E
   0
 SORTENTSTABLE
   5
-171
+17E
 330
-170
+17D
 100
 AcDbSortentsTable
 330
 17
 331
-DF
+EA
   5
 1
 331
-E0
+EB
   5
 2
 331
-E1
+EC
   5
 3
 331
-E2
+ED
   5
 4
 331
-E3
+EE
   5
 5
 331
-E4
+EF
   5
 6
 331
-E5
+F0
   5
 7
 331
-E6
+F1
   5
 8
 331
-E7
+F2
   5
 9
 331
-E8
+F3
   5
 A
 331
-E9
+F4
   5
 B
   0
 DICTIONARY
   5
-172
+17F
 330
 1
 100
@@ -19711,13 +20095,13 @@ AcDbDictionary
   3
 ACLYDICTIONARY
 350
-173
+180
   0
 DICTIONARY
   5
-173
+180
 330
-172
+17F
 100
 AcDbDictionary
 280
@@ -19727,19 +20111,19 @@ AcDbDictionary
   3
 *A1
 350
-174
+181
   0
 XRECORD
   5
-174
+181
 102
 {ACAD_XDICTIONARY
 360
-175
+182
 102
 }
 330
-173
+180
 100
 AcDbXrecord
 280
@@ -19751,23 +20135,23 @@ AcLyLayerGroup
 300
 CUANTIFICACION
 330
-BA
+C5
 330
-B8
+C3
 330
-B9
+C4
 330
-B6
+C1
 330
-BC
+C7
 330
-BB
+C6
   0
 DICTIONARY
   5
-175
+182
 330
-174
+181
 100
 AcDbDictionary
 280
@@ -19777,13 +20161,13 @@ AcDbDictionary
   3
 ACLYDICTIONARY
 350
-176
+183
   0
 DICTIONARY
   5
-176
+183
 330
-175
+182
 100
 AcDbDictionary
 280
@@ -19793,23 +20177,23 @@ AcDbDictionary
   3
 *A1
 350
-177
+184
   3
 *A2
 350
-17B
+188
   0
 XRECORD
   5
-177
+184
 102
 {ACAD_XDICTIONARY
 360
-178
+185
 102
 }
 330
-176
+183
 100
 AcDbXrecord
 280
@@ -19821,19 +20205,19 @@ AcLyLayerGroup
 300
 MUROS
 330
-BA
+C5
 330
-B8
+C3
 330
-B9
+C4
 330
-B6
+C1
   0
 DICTIONARY
   5
-178
+185
 330
-177
+184
 100
 AcDbDictionary
 280
@@ -19843,13 +20227,13 @@ AcDbDictionary
   3
 ACLYDICTIONARY
 350
-179
+186
   0
 DICTIONARY
   5
-179
+186
 330
-178
+185
 100
 AcDbDictionary
 280
@@ -19859,13 +20243,13 @@ AcDbDictionary
   3
 *A1
 350
-17A
+187
   0
 XRECORD
   5
-17A
+187
 330
-179
+186
 100
 AcDbXrecord
 280
@@ -19877,19 +20261,19 @@ AcLyLayerGroup
 300
 MUROS N1
 330
-BA
+C5
 330
-B8
+C3
 330
-B9
+C4
 330
-B6
+C1
   0
 XRECORD
   5
-17B
+188
 330
-176
+183
 100
 AcDbXrecord
 280
@@ -19901,9 +20285,9 @@ AcLyLayerGroup
 300
 CIMIENTO CORRIDO
 330
-BC
+C7
 330
-BB
+C6
   0
 ENDSEC
   0

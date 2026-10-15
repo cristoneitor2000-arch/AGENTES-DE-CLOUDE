@@ -1,8 +1,17 @@
 {
-  "_leeme": "SOLO PARA PRUEBAS. Las reglas de cimiento de este archivo son valores de prueba inventados para ejercitar el codigo; NO son reglas de Chris ni se usan en produccion.",
-  "reglas_cimiento_prueba": {
-    "0.10": {"con_cimiento": false},
-    "0.15": {"con_cimiento": true, "tipo": "CC-PRUEBA1", "ancho": 0.40, "peralte": 0.20, "color": 2},
-    "0.20": {"con_cimiento": true, "tipo": "CC-PRUEBA2", "ancho": 0.50, "peralte": 0.20, "color": 4}
+  "_leeme": "SOLO PARA PRUEBAS. Tipos de cimiento de prueba inventados para ejercitar el codigo; NO son de Chris ni se usan en produccion.",
+  "tipos_cimiento_prueba": {
+    "CC1": {
+      "ancho": 0.4,
+      "peralte": 0.2,
+      "color": 2,
+      "color_dentro": 52
+    },
+    "MC1": {
+      "ancho": 0.5,
+      "peralte": 0.2,
+      "color": 4,
+      "color_dentro": 144
+    }
   }
 }

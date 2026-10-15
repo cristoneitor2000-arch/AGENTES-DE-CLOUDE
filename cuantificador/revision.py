@@ -25,9 +25,10 @@ def rect_tramo(t):
     return Polygon([(x0 - nx * h, y0 - ny * h), (x1 - nx * h, y1 - ny * h), (x1 + nx * h, y1 + ny * h), (x0 + nx * h, y0 + ny * h)])
 
 
-def cobertura(segs, arcos, res, P):
+def cobertura(segs, arcos, res, P, bloques=()):
     tol = max(0.01, 2 * P.tol_espesor)
     polys = [rect_tramo(t).buffer(tol, join_style=2) for t in res.tramos if t["largo"] > 1e-9]
+    polys += [q.buffer(tol, join_style=2) for _, q, _, _ in getattr(res, "esquinas", [])]   # ya tienen su marca
     U = unary_union(polys) if (polys and arcos) else None   # solo para los arcos
     arbol = STRtree(polys) if polys else None
 
@@ -53,10 +54,11 @@ def cobertura(segs, arcos, res, P):
     revisiones = []
     zonas = []        # (polígono, revisión): problemas que ya tienen marca; absorben las líneas que caen dentro
     # ejes cortos
+    dentro_de_muro = lambda B: arbol is not None and any(polys[i].contains(Point(B.centro)) for i in arbol.query(Point(B.centro)))
     for W in res.cortas:
         sids = [sid for lid in W.lineas for sid, _, _ in res.lineas[lid].segs]
-        if all(sobrante[sid].length <= P.residuo_min for sid in sids):
-            continue   # p. ej. jambas de un vano angosto: las explican otros muros
+        if all(sobrante[sid].length <= P.residuo_min for sid in sids) and all(dentro_de_muro(bloques[b]) for b in W.bloques):
+            continue   # p. ej. jambas de un vano angosto o un block suelto dentro de otro muro
         m = W.punto((W.a + W.b) / 2)
         rv = Revision("eje muy corto", m[0], m[1], f"eje de {W.largo:.3f} m (< {P.umbral_eje_corto} m), espesor {W.esp:.2f} m")
         revisiones.append(rv)
@@ -117,6 +119,19 @@ def cobertura(segs, arcos, res, P):
         revisiones.append(Revision("arco no analizado", a.medio[0], a.medio[1],
                                    f"arco R {a.radio:.3f} m, largo {a.largo:.3f} m", (a.handle,)))
 
+    # bloques: los que no quedaron en ningún muro (los de tamaño o ancho fuera de lista ya tienen marca)
+    marcados = {h for r in res.revisiones for h in r.handles}
+    en_cortas = {b for W in res.cortas for b in W.bloques}
+    n_blq_ok = 0
+    for B in bloques:
+        if B.id in res.bloques_usados or dentro_de_muro(B):
+            n_blq_ok += 1
+            continue
+        if B.handle in marcados or B.id in en_cortas:
+            continue
+        revisiones.append(Revision("bloque sin muro", B.centro[0], B.centro[1],
+                                   f"block de {B.largo:.3f} x {B.ancho:.3f} m que no quedó en ningún muro", (B.handle,)))
+
     largo_total = sum(s.largo for s in segs) + sum(a.largo for a in arcos)
     largo_rec = sum(s.largo - (sobrante[s.id].length if sobrante[s.id].length > P.residuo_min else 0.0) for s in segs)
     largo_rec += sum(a.largo for a in arcos if U is not None and U.contains(Point(a.medio)))
@@ -124,7 +139,9 @@ def cobertura(segs, arcos, res, P):
     stats = dict(segmentos=len(segs), arcos=len(arcos), segmentos_reconocidos=n_ok,
                  largo_total=largo_total, largo_reconocido=largo_rec,
                  pct_largo=(100.0 * largo_rec / largo_total) if largo_total else 0.0,
-                 pct_segmentos=(100.0 * n_ok / len(segs)) if segs else 0.0)
+                 pct_segmentos=(100.0 * n_ok / len(segs)) if segs else 0.0,
+                 bloques=len(bloques), bloques_reconocidos=n_blq_ok,
+                 pct_bloques=(100.0 * n_blq_ok / len(bloques)) if bloques else 0.0)
     return revisiones, stats
 
 
@@ -181,6 +198,9 @@ def escribir_reporte(ruta, info):
     w(f"| Longitud de líneas analizadas | {st['largo_total']:.3f} | m |")
     w(f"| Longitud reconocida | {st['largo_reconocido']:.3f} | m |")
     w(f"| % reconocido por longitud | {st['pct_largo']:.2f} | % |")
+    w(f"| Bloques del emplantillado analizados | {st.get('bloques', 0)} | u |")
+    w(f"| Bloques dentro de un muro reconocido | {st.get('bloques_reconocidos', 0)} | u |")
+    w(f"| % de bloques reconocidos | {st.get('pct_bloques', 0):.2f} | % |")
     w("")
     w("## Cantidades generadas")
     w("")
@@ -220,11 +240,12 @@ def escribir_reporte(ruta, info):
 
 
 LIMITACIONES = [
-    "Solo muros rectos dibujados como pares de líneas paralelas (LINE, LWPOLYLINE, POLYLINE) en el espacio modelo; no lee bloques, xrefs, MLINE ni hatch.",
+    "Muros rectos: caras dibujadas como pares de líneas (LINE, LWPOLYLINE, POLYLINE) o emplantillado de blocks (INSERT). No lee xrefs no enlazados, MLINE ni hatch como muro.",
     "Los arcos (muros curvos) no se analizan: van a REVISION.",
     "Las ventanas no se detectan en planta (el muro sigue dibujado bajo la ventana).",
     "El vano en extremo libre (hueco de puerta entre el fin de un muro y la cara del que cruza) se deduce y queda con observación 'verificar'.",
-    "No asigna ejes (EP1-EP3) ni trata mochetas, columnas ni pines.",
+    "Mochetas y columnas solo se usan para recortar extremos de muro y descontar en vanos (no se cuantifican). En una L sin mocheta, la regla del motor deja la esquina sin muro.",
+    "No asigna ejes (EP1-EP3).",
     "El bloque de muro es estático (ezdxf no crea el xMuro dinámico): el largo va en el atributo LARGO y en la escala X.",
-    "La regla de esquinas es un supuesto hasta que Chris la confirme.",
+    "El tipo de cimiento sale de las etiquetas del plano: un eje sin etiqueta a <= 2.2 m o con etiquetas de tipos distintos queda sin cimiento y va a REVISION.",
 ]

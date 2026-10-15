@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.7783680554
+2461329.8286574073
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.7783680554
+2461329.8286574073
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-B4
+BF
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{77132519-82ED-42A7-BFF6-D2D7F435BECA}
+{A256A7E3-677E-489A-9CBF-961E4F542D65}
   9
 $VERSIONGUID
   2
-{9C10B218-3F13-4F01-9B8B-59C78F7D735A}
+{F60E9AE5-A1BC-4284-9656-C99A1DCB424F}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -3161,7 +3161,7 @@ ACAD
   0
 APPID
   5
-B1
+BC
 330
 3
 100
@@ -3175,7 +3175,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-B2
+BD
 330
 3
 100
@@ -6213,6 +6213,336 @@ AF
 100
 AcDbEntity
   8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+2.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+2.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B0
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+12.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+12.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B1
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+9.4
+ 20
+1.5
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+9.4
+ 21
+1.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B2
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+21.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+21.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B3
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+23.6
+ 20
+1.5
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+23.6
+ 21
+1.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B4
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+61.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+MC1
+ 11
+61.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B5
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+31.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+31.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B6
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+32.4
+ 20
+1.2
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+32.4
+ 21
+1.2
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B7
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+41.0
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+41.0
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B8
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+91.5
+ 20
+-0.6
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+91.5
+ 21
+-0.6
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+B9
+330
+17
+100
+AcDbEntity
+  8
+A-TEXTO-CIM
+100
+AcDbText
+ 10
+94.6
+ 20
+1.2
+ 30
+0.0
+ 40
+0.2
+  1
+CC1
+ 11
+94.6
+ 21
+1.2
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+BA
+330
+17
+100
+AcDbEntity
+  8
 A-TEXTO
 100
 AcDbText
@@ -6237,7 +6567,7 @@ AcDbText
   0
 LINE
   5
-B0
+BB
 330
 17
 100
@@ -7349,7 +7679,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-B3
+BE
   0
 DICTIONARYVAR
   5
@@ -7361,7 +7691,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:40:51.928092+00:00
+1.4.4 @ 2026-10-15T19:53:16.729908+00:00
   0
 VISUALSTYLE
   5
@@ -13915,7 +14245,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-B3
+BE
 330
 2D
 100
@@ -13923,7 +14253,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:40:51.939156+00:00
+1.4.4 @ 2026-10-15T19:53:16.737092+00:00
   0
 ENDSEC
   0

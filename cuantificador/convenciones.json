@@ -22,34 +22,55 @@
   },
   "cimiento": {
     "capa": "Cimiento corrido {tipo} de {ancho} x {peralte} m",
+    "sufijo_dentro_zapata": " (dentro de zapata)",
     "transparencia": 0.5,
     "corrido_por_vanos": true,
     "al_fondo": true,
-    "reglas": {},
-    "_reglas_formato": {
-      "0.15": {"con_cimiento": true, "tipo": "CC1", "ancho": 0.40, "peralte": 0.20, "color": 2},
-      "0.10": {"con_cimiento": false}
+    "espesores_sin_cimiento": [
+      0.1
+    ],
+    "dist_etiqueta": 2.2,
+    "tipos": {},
+    "_tipos_formato": {
+      "CC1": {
+        "ancho": 0.7,
+        "peralte": 0.25,
+        "color": 2,
+        "color_dentro": 52
+      },
+      "MC1": {
+        "ancho": 1.0,
+        "peralte": 0.3,
+        "color": 4,
+        "color_dentro": 144
+      }
     },
-    "_nota": "PENDIENTE: Chris debe llenar 'reglas' (clave = espesor del muro con 2 decimales). Un espesor sin regla NO se inventa: su cimiento va a REVISION. '_reglas_formato' es solo un ejemplo del formato y el programa lo ignora."
+    "_nota": "El tipo y las medidas salen del detalle estructural de CADA proyecto: se cargan en la tabla de la interfaz (o en 'tipos'). El tipo de cada eje se lee de las etiquetas CC/MC del plano (cada etiqueta al eje mas cercano a <= dist_etiqueta) y se valida que cada etiqueta tenga un tramo de su tipo a <= dist_etiqueta. Tabiques de 0.10: sin cimiento. Lo que cae dentro de zapata va en la capa '<capa> (dentro de zapata)'. '_tipos_formato' es solo ejemplo (Casa JPS) y el programa lo ignora.",
+    "gap_linea": 2.5
   },
   "esquinas": {
-    "muro_L": "mas_largo_toma_esquina",
-    "muro_T": "hasta_cara_del_corrido",
-    "muro_cruz": "mas_largo_continuo",
-    "cimiento_L": "cruce_de_ejes",
-    "cimiento_T": "hasta_cara_del_cimiento_que_cruza",
-    "_nota": "[Supuesto] regla propuesta y no confirmada todavia por Chris (punto 5). Muros sin traslapes: muro | vano | muro."
+    "muro": "de eje a eje; donde otro eje pasa por el extremo se recorta medio espesor propio; con mocheta/columna en el extremo, el muro mas largo llega a su cara lejana y los demas a la cara cercana (regla de est.py). Cruz: el mas largo continuo, el otro se parte en el eje.",
+    "cimiento_L": "cruce de ejes (polilinea unida)",
+    "cimiento_T": "hasta la cara del cimiento que cruza",
+    "_nota": "Confirmado por Chris (punto 5)."
   },
   "revision": {
     "capa": "REVISION",
     "color": 1,
     "radio": 0.25,
-    "altura_texto": 0.10
+    "altura_texto": 0.1
   },
   "grupos": {
     "raiz": "CUANTIFICACION",
     "muros": "MUROS",
     "muros_nivel": "MUROS {nivel}",
+    "contencion": "MURO DE CONTENCION",
     "cimiento": "CIMIENTO CORRIDO"
+  },
+  "muro_contencion": {
+    "capa": "{nivel} Muro de contencion de {cm}cm",
+    "color": 6,
+    "transparencia": 0.5,
+    "_nota": "Doble hilada (dos blocks pegados) = muro de contencion: xMuro 30, capa y grupo de capas aparte (skill cuantificar-mamposteria-cad, regla 5)."
   }
 }
