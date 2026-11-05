@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461350.9804513888
+2461350.9882407407
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461350.9804629628
+2461350.9882523147
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-FE1
+FE3
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{9233D6C6-0819-4B6E-9ACC-64B5305174F1}
+{549980DB-07E3-4966-B65D-DE01CE910ACF}
   9
 $VERSIONGUID
   2
-{8B372810-1F6C-4A2B-ACDA-092483916B82}
+{5B30DC56-E1CD-4A94-B0A0-E3C575EFD4E8}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -2341,7 +2341,7 @@ LAYER
 102
 {ACAD_XDICTIONARY
 360
-FD3
+FD5
 102
 }
 330
@@ -2349,7 +2349,7 @@ FD3
 100
 AcDbSymbolTable
  70
-22
+23
   0
 LAYER
   5
@@ -2932,6 +2932,40 @@ Cuantificación cuarto de máquinas pozo - Claude 2026-11-05
 LAYER
   5
 EFD
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Bordillo de block U de 0.15 x 0.20 m
+ 70
+0
+ 62
+2
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+1001
+AcCmTransparency
+1071
+33554610
+1001
+AcAecLayerStandard
+1000
+
+1000
+Cuantificación cuarto de máquinas pozo - Claude 2026-11-05
+  0
+LAYER
+  5
+EFE
 330
 1
 100
@@ -4209,7 +4243,7 @@ AcCmTransparency
   0
 APPID
   5
-FDE
+FE0
 330
 3
 100
@@ -4223,7 +4257,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-FDF
+FE1
 330
 3
 100
@@ -6209,7 +6243,7 @@ CUARTO DE BOMBAS_dwg _2_-1318126-Leyenda 2
   0
 BLOCK_RECORD
   5
-EFE
+EFF
 330
 9
 100
@@ -6229,7 +6263,7 @@ xMuro 15 (estatico)
   0
 BLOCK_RECORD
   5
-F0B
+F0C
 330
 9
 100
@@ -6249,7 +6283,7 @@ Columna A
   0
 BLOCK_RECORD
   5
-F14
+F15
 330
 9
 100
@@ -217529,9 +217563,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-EFF
+F00
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217555,9 +217589,9 @@ xMuro 15 (estatico)
   0
 LWPOLYLINE
   5
-F01
+F02
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217583,9 +217617,9 @@ AcDbPolyline
   0
 HATCH
   5
-F02
+F03
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217643,9 +217677,9 @@ SOLID
   0
 ATTDEF
   5
-F03
+F04
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217677,9 +217711,9 @@ TIPO
   0
 ATTDEF
   5
-F04
+F05
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217711,9 +217745,9 @@ LARGO
   0
 ATTDEF
   5
-F05
+F06
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217745,9 +217779,9 @@ ALTO
   0
 ATTDEF
   5
-F06
+F07
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217779,9 +217813,9 @@ AREA
   0
 ATTDEF
   5
-F07
+F08
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217813,9 +217847,9 @@ EP1
   0
 ATTDEF
   5
-F08
+F09
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217847,9 +217881,9 @@ EP2
   0
 ATTDEF
   5
-F09
+F0A
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217881,9 +217915,9 @@ EP3
   0
 ATTDEF
   5
-F0A
+F0B
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217915,9 +217949,9 @@ ID
   0
 ENDBLK
   5
-F00
+F01
 330
-EFE
+EFF
 100
 AcDbEntity
   8
@@ -217927,9 +217961,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-F0C
+F0D
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -217953,9 +217987,9 @@ Columna A
   0
 LWPOLYLINE
   5
-F0E
+F0F
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -217985,9 +218019,9 @@ AcDbPolyline
   0
 HATCH
   5
-F0F
+F10
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218049,9 +218083,9 @@ SOLID
   0
 ATTDEF
   5
-F10
+F11
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218083,9 +218117,9 @@ ID
   0
 ATTDEF
   5
-F11
+F12
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218117,9 +218151,9 @@ SECCION
   0
 ATTDEF
   5
-F12
+F13
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218151,9 +218185,9 @@ REFUERZO
   0
 ATTDEF
   5
-F13
+F14
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218185,9 +218219,9 @@ ALTO
   0
 ENDBLK
   5
-F0D
+F0E
 330
-F0B
+F0C
 100
 AcDbEntity
   8
@@ -218197,9 +218231,9 @@ AcDbBlockEnd
   0
 BLOCK
   5
-F15
+F16
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218223,9 +218257,9 @@ Pin No.3
   0
 LWPOLYLINE
   5
-F17
+F18
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218255,9 +218289,9 @@ AcDbPolyline
   0
 HATCH
   5
-F18
+F19
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218319,9 +218353,9 @@ SOLID
   0
 ATTDEF
   5
-F19
+F1A
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218353,9 +218387,9 @@ ID
   0
 ATTDEF
   5
-F1A
+F1B
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218387,9 +218421,9 @@ MURO
   0
 ATTDEF
   5
-F1B
+F1C
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218421,9 +218455,9 @@ ALTO
   0
 ENDBLK
   5
-F16
+F17
 330
-F14
+F15
 100
 AcDbEntity
   8
@@ -218483,7 +218517,7 @@ MACHOTE HD-04 DETALLES CUARTO DE BOMBAS (escala 1-25 a metros)
   0
 LWPOLYLINE
   5
-F1C
+F1D
 330
 17
 100
@@ -218517,7 +218551,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-F1D
+F1E
 330
 17
 100
@@ -218549,7 +218583,7 @@ AcDbPolyline
   0
 HATCH
   5
-F1E
+F1F
 330
 17
 100
@@ -218613,7 +218647,7 @@ SOLID
   0
 LWPOLYLINE
   5
-F1F
+F20
 330
 17
 100
@@ -218661,7 +218695,7 @@ AcDbPolyline
   0
 HATCH
   5
-F20
+F21
 330
 17
 100
@@ -218739,9 +218773,43 @@ SOLID
  98
 0
   0
+LWPOLYLINE
+  5
+F22
+330
+17
+100
+AcDbEntity
+  8
+Bordillo de block U de 0.15 x 0.20 m
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.15
+ 10
+0.075
+ 20
+-0.225
+ 10
+4.225
+ 20
+-0.225
+ 10
+4.225
+ 20
+2.225
+ 10
+0.075
+ 20
+2.225
+  0
 INSERT
   5
-F21
+F23
 330
 17
 100
@@ -218763,7 +218831,7 @@ Columna A
   0
 ATTRIB
   5
-F23
+F25
 330
 17
 100
@@ -218807,7 +218875,7 @@ ID
   0
 ATTRIB
   5
-F24
+F26
 330
 17
 100
@@ -218851,7 +218919,7 @@ SECCION
   0
 ATTRIB
   5
-F25
+F27
 330
 17
 100
@@ -218895,7 +218963,7 @@ REFUERZO
   0
 ATTRIB
   5
-F26
+F28
 330
 17
 100
@@ -218939,9 +219007,9 @@ ALTO
   0
 SEQEND
   5
-F22
+F24
 330
-F21
+F23
 100
 AcDbEntity
   8
@@ -218949,7 +219017,7 @@ Columna A
   0
 INSERT
   5
-F27
+F29
 330
 17
 100
@@ -218971,7 +219039,7 @@ Columna A
   0
 ATTRIB
   5
-F29
+F2B
 330
 17
 100
@@ -219015,7 +219083,7 @@ ID
   0
 ATTRIB
   5
-F2A
+F2C
 330
 17
 100
@@ -219059,7 +219127,7 @@ SECCION
   0
 ATTRIB
   5
-F2B
+F2D
 330
 17
 100
@@ -219103,7 +219171,7 @@ REFUERZO
   0
 ATTRIB
   5
-F2C
+F2E
 330
 17
 100
@@ -219147,9 +219215,9 @@ ALTO
   0
 SEQEND
   5
-F28
+F2A
 330
-F27
+F29
 100
 AcDbEntity
   8
@@ -219157,7 +219225,7 @@ Columna A
   0
 INSERT
   5
-F2D
+F2F
 330
 17
 100
@@ -219179,7 +219247,7 @@ Columna A
   0
 ATTRIB
   5
-F2F
+F31
 330
 17
 100
@@ -219223,7 +219291,7 @@ ID
   0
 ATTRIB
   5
-F30
+F32
 330
 17
 100
@@ -219267,7 +219335,7 @@ SECCION
   0
 ATTRIB
   5
-F31
+F33
 330
 17
 100
@@ -219311,7 +219379,7 @@ REFUERZO
   0
 ATTRIB
   5
-F32
+F34
 330
 17
 100
@@ -219355,9 +219423,9 @@ ALTO
   0
 SEQEND
   5
-F2E
+F30
 330
-F2D
+F2F
 100
 AcDbEntity
   8
@@ -219365,7 +219433,7 @@ Columna A
   0
 INSERT
   5
-F33
+F35
 330
 17
 100
@@ -219387,7 +219455,7 @@ Columna A
   0
 ATTRIB
   5
-F35
+F37
 330
 17
 100
@@ -219431,7 +219499,7 @@ ID
   0
 ATTRIB
   5
-F36
+F38
 330
 17
 100
@@ -219475,7 +219543,7 @@ SECCION
   0
 ATTRIB
   5
-F37
+F39
 330
 17
 100
@@ -219519,7 +219587,7 @@ REFUERZO
   0
 ATTRIB
   5
-F38
+F3A
 330
 17
 100
@@ -219563,9 +219631,9 @@ ALTO
   0
 SEQEND
   5
-F34
+F36
 330
-F33
+F35
 100
 AcDbEntity
   8
@@ -219573,7 +219641,7 @@ Columna A
   0
 INSERT
   5
-F39
+F3B
 330
 17
 100
@@ -219595,7 +219663,7 @@ Columna A
   0
 ATTRIB
   5
-F3B
+F3D
 330
 17
 100
@@ -219639,7 +219707,7 @@ ID
   0
 ATTRIB
   5
-F3C
+F3E
 330
 17
 100
@@ -219683,7 +219751,7 @@ SECCION
   0
 ATTRIB
   5
-F3D
+F3F
 330
 17
 100
@@ -219727,7 +219795,7 @@ REFUERZO
   0
 ATTRIB
   5
-F3E
+F40
 330
 17
 100
@@ -219771,9 +219839,9 @@ ALTO
   0
 SEQEND
   5
-F3A
+F3C
 330
-F39
+F3B
 100
 AcDbEntity
   8
@@ -219781,7 +219849,7 @@ Columna A
   0
 INSERT
   5
-F3F
+F41
 330
 17
 100
@@ -219803,7 +219871,7 @@ Columna A
   0
 ATTRIB
   5
-F41
+F43
 330
 17
 100
@@ -219847,7 +219915,7 @@ ID
   0
 ATTRIB
   5
-F42
+F44
 330
 17
 100
@@ -219891,7 +219959,7 @@ SECCION
   0
 ATTRIB
   5
-F43
+F45
 330
 17
 100
@@ -219935,7 +220003,7 @@ REFUERZO
   0
 ATTRIB
   5
-F44
+F46
 330
 17
 100
@@ -219979,9 +220047,9 @@ ALTO
   0
 SEQEND
   5
-F40
+F42
 330
-F3F
+F41
 100
 AcDbEntity
   8
@@ -219989,7 +220057,7 @@ Columna A
   0
 LWPOLYLINE
   5
-F45
+F47
 330
 17
 100
@@ -220021,7 +220089,7 @@ AcDbPolyline
   0
 INSERT
   5
-F46
+F48
 330
 17
 100
@@ -220043,7 +220111,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F48
+F4A
 330
 17
 100
@@ -220087,7 +220155,7 @@ TIPO
   0
 ATTRIB
   5
-F49
+F4B
 330
 17
 100
@@ -220131,7 +220199,7 @@ LARGO
   0
 ATTRIB
   5
-F4A
+F4C
 330
 17
 100
@@ -220175,7 +220243,7 @@ ALTO
   0
 ATTRIB
   5
-F4B
+F4D
 330
 17
 100
@@ -220219,7 +220287,7 @@ AREA
   0
 ATTRIB
   5
-F4C
+F4E
 330
 17
 100
@@ -220263,7 +220331,7 @@ EP1
   0
 ATTRIB
   5
-F4D
+F4F
 330
 17
 100
@@ -220307,7 +220375,7 @@ EP2
   0
 ATTRIB
   5
-F4E
+F50
 330
 17
 100
@@ -220351,7 +220419,7 @@ EP3
   0
 ATTRIB
   5
-F4F
+F51
 330
 17
 100
@@ -220395,9 +220463,9 @@ ID
   0
 SEQEND
   5
-F47
+F49
 330
-F46
+F48
 100
 AcDbEntity
   8
@@ -220405,7 +220473,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-F50
+F52
 330
 17
 100
@@ -220429,7 +220497,7 @@ M1 L=4.30 H=3.00
   0
 LWPOLYLINE
   5
-F51
+F53
 330
 17
 100
@@ -220461,7 +220529,7 @@ AcDbPolyline
   0
 INSERT
   5
-F52
+F54
 330
 17
 100
@@ -220485,7 +220553,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F54
+F56
 330
 17
 100
@@ -220531,7 +220599,7 @@ TIPO
   0
 ATTRIB
   5
-F55
+F57
 330
 17
 100
@@ -220577,7 +220645,7 @@ LARGO
   0
 ATTRIB
   5
-F56
+F58
 330
 17
 100
@@ -220623,7 +220691,7 @@ ALTO
   0
 ATTRIB
   5
-F57
+F59
 330
 17
 100
@@ -220669,7 +220737,7 @@ AREA
   0
 ATTRIB
   5
-F58
+F5A
 330
 17
 100
@@ -220715,7 +220783,7 @@ EP1
   0
 ATTRIB
   5
-F59
+F5B
 330
 17
 100
@@ -220761,7 +220829,7 @@ EP2
   0
 ATTRIB
   5
-F5A
+F5C
 330
 17
 100
@@ -220807,7 +220875,7 @@ EP3
   0
 ATTRIB
   5
-F5B
+F5D
 330
 17
 100
@@ -220853,9 +220921,9 @@ ID
   0
 SEQEND
   5
-F53
+F55
 330
-F52
+F54
 100
 AcDbEntity
   8
@@ -220863,7 +220931,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-F5C
+F5E
 330
 17
 100
@@ -220889,7 +220957,7 @@ M2 L=2.00 H=3.00
   0
 LWPOLYLINE
   5
-F5D
+F5F
 330
 17
 100
@@ -220921,7 +220989,7 @@ AcDbPolyline
   0
 INSERT
   5
-F5E
+F60
 330
 17
 100
@@ -220945,7 +221013,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F60
+F62
 330
 17
 100
@@ -220991,7 +221059,7 @@ TIPO
   0
 ATTRIB
   5
-F61
+F63
 330
 17
 100
@@ -221037,7 +221105,7 @@ LARGO
   0
 ATTRIB
   5
-F62
+F64
 330
 17
 100
@@ -221083,7 +221151,7 @@ ALTO
   0
 ATTRIB
   5
-F63
+F65
 330
 17
 100
@@ -221129,7 +221197,7 @@ AREA
   0
 ATTRIB
   5
-F64
+F66
 330
 17
 100
@@ -221175,7 +221243,7 @@ EP1
   0
 ATTRIB
   5
-F65
+F67
 330
 17
 100
@@ -221221,7 +221289,7 @@ EP2
   0
 ATTRIB
   5
-F66
+F68
 330
 17
 100
@@ -221267,7 +221335,7 @@ EP3
   0
 ATTRIB
   5
-F67
+F69
 330
 17
 100
@@ -221313,9 +221381,9 @@ ID
   0
 SEQEND
   5
-F5F
+F61
 330
-F5E
+F60
 100
 AcDbEntity
   8
@@ -221323,7 +221391,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-F68
+F6A
 330
 17
 100
@@ -221349,7 +221417,7 @@ M3 L=2.00 H=3.00
   0
 LWPOLYLINE
   5
-F69
+F6B
 330
 17
 100
@@ -221381,7 +221449,7 @@ AcDbPolyline
   0
 INSERT
   5
-F6A
+F6C
 330
 17
 100
@@ -221403,7 +221471,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F6C
+F6E
 330
 17
 100
@@ -221447,7 +221515,7 @@ TIPO
   0
 ATTRIB
   5
-F6D
+F6F
 330
 17
 100
@@ -221491,7 +221559,7 @@ LARGO
   0
 ATTRIB
   5
-F6E
+F70
 330
 17
 100
@@ -221535,7 +221603,7 @@ ALTO
   0
 ATTRIB
   5
-F6F
+F71
 330
 17
 100
@@ -221579,7 +221647,7 @@ AREA
   0
 ATTRIB
   5
-F70
+F72
 330
 17
 100
@@ -221623,7 +221691,7 @@ EP1
   0
 ATTRIB
   5
-F71
+F73
 330
 17
 100
@@ -221667,7 +221735,7 @@ EP2
   0
 ATTRIB
   5
-F72
+F74
 330
 17
 100
@@ -221711,7 +221779,7 @@ EP3
   0
 ATTRIB
   5
-F73
+F75
 330
 17
 100
@@ -221755,9 +221823,9 @@ ID
   0
 SEQEND
   5
-F6B
+F6D
 330
-F6A
+F6C
 100
 AcDbEntity
   8
@@ -221765,7 +221833,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-F74
+F76
 330
 17
 100
@@ -221789,7 +221857,7 @@ M4 L=0.15 H=3.00
   0
 LWPOLYLINE
   5
-F75
+F77
 330
 17
 100
@@ -221821,7 +221889,7 @@ AcDbPolyline
   0
 INSERT
   5
-F76
+F78
 330
 17
 100
@@ -221843,7 +221911,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F78
+F7A
 330
 17
 100
@@ -221887,7 +221955,7 @@ TIPO
   0
 ATTRIB
   5
-F79
+F7B
 330
 17
 100
@@ -221931,7 +221999,7 @@ LARGO
   0
 ATTRIB
   5
-F7A
+F7C
 330
 17
 100
@@ -221975,7 +222043,7 @@ ALTO
   0
 ATTRIB
   5
-F7B
+F7D
 330
 17
 100
@@ -222019,7 +222087,7 @@ AREA
   0
 ATTRIB
   5
-F7C
+F7E
 330
 17
 100
@@ -222063,7 +222131,7 @@ EP1
   0
 ATTRIB
   5
-F7D
+F7F
 330
 17
 100
@@ -222107,7 +222175,7 @@ EP2
   0
 ATTRIB
   5
-F7E
+F80
 330
 17
 100
@@ -222151,7 +222219,7 @@ EP3
   0
 ATTRIB
   5
-F7F
+F81
 330
 17
 100
@@ -222195,9 +222263,9 @@ ID
   0
 SEQEND
   5
-F77
+F79
 330
-F76
+F78
 100
 AcDbEntity
   8
@@ -222205,7 +222273,7 @@ N1 Muro de 15cm - Vano ventana
   0
 MTEXT
   5
-F80
+F82
 330
 17
 100
@@ -222229,7 +222297,7 @@ V1 L=1.35 H=3.00
   0
 LWPOLYLINE
   5
-F81
+F83
 330
 17
 100
@@ -222261,7 +222329,7 @@ AcDbPolyline
   0
 INSERT
   5
-F82
+F84
 330
 17
 100
@@ -222283,7 +222351,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F84
+F86
 330
 17
 100
@@ -222327,7 +222395,7 @@ TIPO
   0
 ATTRIB
   5
-F85
+F87
 330
 17
 100
@@ -222371,7 +222439,7 @@ LARGO
   0
 ATTRIB
   5
-F86
+F88
 330
 17
 100
@@ -222415,7 +222483,7 @@ ALTO
   0
 ATTRIB
   5
-F87
+F89
 330
 17
 100
@@ -222459,7 +222527,7 @@ AREA
   0
 ATTRIB
   5
-F88
+F8A
 330
 17
 100
@@ -222503,7 +222571,7 @@ EP1
   0
 ATTRIB
   5
-F89
+F8B
 330
 17
 100
@@ -222547,7 +222615,7 @@ EP2
   0
 ATTRIB
   5
-F8A
+F8C
 330
 17
 100
@@ -222591,7 +222659,7 @@ EP3
   0
 ATTRIB
   5
-F8B
+F8D
 330
 17
 100
@@ -222635,9 +222703,9 @@ ID
   0
 SEQEND
   5
-F83
+F85
 330
-F82
+F84
 100
 AcDbEntity
   8
@@ -222645,7 +222713,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-F8C
+F8E
 330
 17
 100
@@ -222669,7 +222737,7 @@ M5 L=0.15 H=3.00
   0
 LWPOLYLINE
   5
-F8D
+F8F
 330
 17
 100
@@ -222701,7 +222769,7 @@ AcDbPolyline
   0
 INSERT
   5
-F8E
+F90
 330
 17
 100
@@ -222723,7 +222791,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F90
+F92
 330
 17
 100
@@ -222767,7 +222835,7 @@ TIPO
   0
 ATTRIB
   5
-F91
+F93
 330
 17
 100
@@ -222811,7 +222879,7 @@ LARGO
   0
 ATTRIB
   5
-F92
+F94
 330
 17
 100
@@ -222855,7 +222923,7 @@ ALTO
   0
 ATTRIB
   5
-F93
+F95
 330
 17
 100
@@ -222899,7 +222967,7 @@ AREA
   0
 ATTRIB
   5
-F94
+F96
 330
 17
 100
@@ -222943,7 +223011,7 @@ EP1
   0
 ATTRIB
   5
-F95
+F97
 330
 17
 100
@@ -222987,7 +223055,7 @@ EP2
   0
 ATTRIB
   5
-F96
+F98
 330
 17
 100
@@ -223031,7 +223099,7 @@ EP3
   0
 ATTRIB
   5
-F97
+F99
 330
 17
 100
@@ -223075,9 +223143,9 @@ ID
   0
 SEQEND
   5
-F8F
+F91
 330
-F8E
+F90
 100
 AcDbEntity
   8
@@ -223085,7 +223153,7 @@ N1 Muro de 15cm - Vano puerta
   0
 MTEXT
   5
-F98
+F9A
 330
 17
 100
@@ -223109,7 +223177,7 @@ P1 L=1.00 H=3.00
   0
 LWPOLYLINE
   5
-F99
+F9B
 330
 17
 100
@@ -223141,7 +223209,7 @@ AcDbPolyline
   0
 INSERT
   5
-F9A
+F9C
 330
 17
 100
@@ -223163,7 +223231,7 @@ xMuro 15 (estatico)
   0
 ATTRIB
   5
-F9C
+F9E
 330
 17
 100
@@ -223207,7 +223275,7 @@ TIPO
   0
 ATTRIB
   5
-F9D
+F9F
 330
 17
 100
@@ -223251,7 +223319,7 @@ LARGO
   0
 ATTRIB
   5
-F9E
+FA0
 330
 17
 100
@@ -223295,7 +223363,7 @@ ALTO
   0
 ATTRIB
   5
-F9F
+FA1
 330
 17
 100
@@ -223339,7 +223407,7 @@ AREA
   0
 ATTRIB
   5
-FA0
+FA2
 330
 17
 100
@@ -223383,7 +223451,7 @@ EP1
   0
 ATTRIB
   5
-FA1
+FA3
 330
 17
 100
@@ -223427,7 +223495,7 @@ EP2
   0
 ATTRIB
   5
-FA2
+FA4
 330
 17
 100
@@ -223471,7 +223539,7 @@ EP3
   0
 ATTRIB
   5
-FA3
+FA5
 330
 17
 100
@@ -223515,9 +223583,9 @@ ID
   0
 SEQEND
   5
-F9B
+F9D
 330
-F9A
+F9C
 100
 AcDbEntity
   8
@@ -223525,7 +223593,7 @@ N1 Muro de 15cm
   0
 MTEXT
   5
-FA4
+FA6
 330
 17
 100
@@ -223549,7 +223617,7 @@ M6 L=1.65 H=3.00
   0
 INSERT
   5
-FA5
+FA7
 330
 17
 100
@@ -223571,7 +223639,7 @@ Pin No.3
   0
 ATTRIB
   5
-FA7
+FA9
 330
 17
 100
@@ -223615,7 +223683,7 @@ ID
   0
 ATTRIB
   5
-FA8
+FAA
 330
 17
 100
@@ -223659,7 +223727,7 @@ MURO
   0
 ATTRIB
   5
-FA9
+FAB
 330
 17
 100
@@ -223703,9 +223771,9 @@ ALTO
   0
 SEQEND
   5
-FA6
+FA8
 330
-FA5
+FA7
 100
 AcDbEntity
   8
@@ -223713,7 +223781,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FAA
+FAC
 330
 17
 100
@@ -223735,7 +223803,7 @@ Pin No.3
   0
 ATTRIB
   5
-FAC
+FAE
 330
 17
 100
@@ -223779,7 +223847,7 @@ ID
   0
 ATTRIB
   5
-FAD
+FAF
 330
 17
 100
@@ -223823,7 +223891,7 @@ MURO
   0
 ATTRIB
   5
-FAE
+FB0
 330
 17
 100
@@ -223867,9 +223935,9 @@ ALTO
   0
 SEQEND
   5
-FAB
+FAD
 330
-FAA
+FAC
 100
 AcDbEntity
   8
@@ -223877,7 +223945,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FAF
+FB1
 330
 17
 100
@@ -223899,7 +223967,7 @@ Pin No.3
   0
 ATTRIB
   5
-FB1
+FB3
 330
 17
 100
@@ -223943,7 +224011,7 @@ ID
   0
 ATTRIB
   5
-FB2
+FB4
 330
 17
 100
@@ -223987,7 +224055,7 @@ MURO
   0
 ATTRIB
   5
-FB3
+FB5
 330
 17
 100
@@ -224031,9 +224099,9 @@ ALTO
   0
 SEQEND
   5
-FB0
+FB2
 330
-FAF
+FB1
 100
 AcDbEntity
   8
@@ -224041,7 +224109,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FB4
+FB6
 330
 17
 100
@@ -224063,7 +224131,7 @@ Pin No.3
   0
 ATTRIB
   5
-FB6
+FB8
 330
 17
 100
@@ -224107,7 +224175,7 @@ ID
   0
 ATTRIB
   5
-FB7
+FB9
 330
 17
 100
@@ -224151,7 +224219,7 @@ MURO
   0
 ATTRIB
   5
-FB8
+FBA
 330
 17
 100
@@ -224195,9 +224263,9 @@ ALTO
   0
 SEQEND
   5
-FB5
+FB7
 330
-FB4
+FB6
 100
 AcDbEntity
   8
@@ -224205,7 +224273,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FB9
+FBB
 330
 17
 100
@@ -224227,7 +224295,7 @@ Pin No.3
   0
 ATTRIB
   5
-FBB
+FBD
 330
 17
 100
@@ -224271,7 +224339,7 @@ ID
   0
 ATTRIB
   5
-FBC
+FBE
 330
 17
 100
@@ -224315,7 +224383,7 @@ MURO
   0
 ATTRIB
   5
-FBD
+FBF
 330
 17
 100
@@ -224359,9 +224427,9 @@ ALTO
   0
 SEQEND
   5
-FBA
+FBC
 330
-FB9
+FBB
 100
 AcDbEntity
   8
@@ -224369,7 +224437,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FBE
+FC0
 330
 17
 100
@@ -224391,7 +224459,7 @@ Pin No.3
   0
 ATTRIB
   5
-FC0
+FC2
 330
 17
 100
@@ -224435,7 +224503,7 @@ ID
   0
 ATTRIB
   5
-FC1
+FC3
 330
 17
 100
@@ -224479,7 +224547,7 @@ MURO
   0
 ATTRIB
   5
-FC2
+FC4
 330
 17
 100
@@ -224523,9 +224591,9 @@ ALTO
   0
 SEQEND
   5
-FBF
+FC1
 330
-FBE
+FC0
 100
 AcDbEntity
   8
@@ -224533,7 +224601,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FC3
+FC5
 330
 17
 100
@@ -224555,7 +224623,7 @@ Pin No.3
   0
 ATTRIB
   5
-FC5
+FC7
 330
 17
 100
@@ -224599,7 +224667,7 @@ ID
   0
 ATTRIB
   5
-FC6
+FC8
 330
 17
 100
@@ -224643,7 +224711,7 @@ MURO
   0
 ATTRIB
   5
-FC7
+FC9
 330
 17
 100
@@ -224687,9 +224755,9 @@ ALTO
   0
 SEQEND
   5
-FC4
+FC6
 330
-FC3
+FC5
 100
 AcDbEntity
   8
@@ -224697,7 +224765,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FC8
+FCA
 330
 17
 100
@@ -224719,7 +224787,7 @@ Pin No.3
   0
 ATTRIB
   5
-FCA
+FCC
 330
 17
 100
@@ -224763,7 +224831,7 @@ ID
   0
 ATTRIB
   5
-FCB
+FCD
 330
 17
 100
@@ -224807,7 +224875,7 @@ MURO
   0
 ATTRIB
   5
-FCC
+FCE
 330
 17
 100
@@ -224851,9 +224919,9 @@ ALTO
   0
 SEQEND
   5
-FC9
+FCB
 330
-FC8
+FCA
 100
 AcDbEntity
   8
@@ -224861,7 +224929,7 @@ Pin No.3 en Muro de 15cm
   0
 INSERT
   5
-FCD
+FCF
 330
 17
 100
@@ -224883,7 +224951,7 @@ Pin No.3
   0
 ATTRIB
   5
-FCF
+FD1
 330
 17
 100
@@ -224927,7 +224995,7 @@ ID
   0
 ATTRIB
   5
-FD0
+FD2
 330
 17
 100
@@ -224971,7 +225039,7 @@ MURO
   0
 ATTRIB
   5
-FD1
+FD3
 330
 17
 100
@@ -225015,9 +225083,9 @@ ALTO
   0
 SEQEND
   5
-FCE
+FD0
 330
-FCD
+FCF
 100
 AcDbEntity
   8
@@ -225025,7 +225093,7 @@ Pin No.3 en Muro de 15cm
   0
 MTEXT
   5
-FD2
+FD4
 330
 17
 100
@@ -225050,8 +225118,10 @@ AcDbMText
 CUARTO DE MAQUINAS POZO MECANICO - OBRA GRIS\PFuente: URB-07 (bloque del cuarto) + HD-04 Detalles cuarto de bombas (cimentacion, columnas, losas, corte de muro).\PMuro block 0.15: 12.60 ml a ejes (8 tramos, 2 vanos). Altura 3.00 m = 0.40 bajo NPT + 2
   3
 .60 (corte de muro).\PColumna A 0.15x0.15 (4 No.3 + Est. No.2 @0.20): 6 u.  Pines No.3 @0.80: 9 u.\PCC-1 0.40 x 0.20 excentrico (al ras exterior): 11.60 ml a su eje, zanja 0.60.\PLosa e=0.10 (Ref. No.3 @0.20 A.S., baston No.3 @0.40) con voladizo 0.30
+  3
+: 11.18 m2.  Contrapiso e=0.10 c/electromalla 3x3: 8.15 m2.\PBordillo de block U 0.15 x 0.20 en el borde de losa: 13.20 ml a su eje (pedido de Chris; HD-04 no lo dibuja).\PVanos: P1 1.00 x 2.10 [alto SUPUESTO], V1 1.35 x 0.60 (corte).  Soleras SH x1,
   1
-: 11.18 m2.  Contrapiso e=0.10 c/electromalla 3x3: 8.15 m2.\PVanos: P1 1.00 x 2.10 [alto SUPUESTO], V1 1.35 x 0.60 (corte).  Soleras SH x1, SI x2, SC x1: van en la hoja Muros.
+ SI x2, SC x1: van en la hoja Muros.
   0
 ENDSEC
   0
@@ -226147,7 +226217,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-FE0
+FE2
   0
 DICTIONARYVAR
   5
@@ -226159,7 +226229,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-05T23:31:51.254380+00:00
+1.4.5 @ 2026-11-05T23:43:04.905163+00:00
   0
 VISUALSTYLE
   5
@@ -232735,7 +232805,7 @@ AcDbRasterVariables
   0
 DICTIONARY
   5
-FD3
+FD5
 330
 1
 100
@@ -232747,13 +232817,13 @@ AcDbDictionary
   3
 ACLYDICTIONARY
 350
-FD4
+FD6
   0
 DICTIONARY
   5
-FD4
+FD6
 330
-FD3
+FD5
 100
 AcDbDictionary
 280
@@ -232763,19 +232833,19 @@ AcDbDictionary
   3
 *A1
 350
-FD5
+FD7
   0
 XRECORD
   5
-FD5
+FD7
 102
 {ACAD_XDICTIONARY
 360
-FD6
+FD8
 102
 }
 330
-FD4
+FD6
 100
 AcDbXrecord
 280
@@ -232801,15 +232871,17 @@ EF8
 330
 EFA
 330
+EFD
+330
 EFB
 330
-EFD
+EFE
   0
 DICTIONARY
   5
-FD6
+FD8
 330
-FD5
+FD7
 100
 AcDbDictionary
 280
@@ -232819,13 +232891,13 @@ AcDbDictionary
   3
 ACLYDICTIONARY
 350
-FD7
+FD9
   0
 DICTIONARY
   5
-FD7
+FD9
 330
-FD6
+FD8
 100
 AcDbDictionary
 280
@@ -232835,33 +232907,33 @@ AcDbDictionary
   3
 *A1
 350
-FD8
+FDA
   3
 *A2
 350
-FD9
+FDB
   3
 *A3
 350
-FDA
+FDC
   3
 *A4
 350
-FDB
+FDD
   3
 *A5
 350
-FDC
+FDE
   3
 *A6
 350
-FDD
+FDF
   0
 XRECORD
   5
-FD8
+FDA
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232881,9 +232953,9 @@ EF6
   0
 XRECORD
   5
-FD9
+FDB
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232899,9 +232971,9 @@ EFC
   0
 XRECORD
   5
-FDA
+FDC
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232917,9 +232989,9 @@ EF7
   0
 XRECORD
   5
-FDB
+FDD
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232935,9 +233007,9 @@ EF8
   0
 XRECORD
   5
-FDC
+FDE
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232950,12 +233022,14 @@ AcLyLayerGroup
 LOSAS N1
 330
 EFA
+330
+EFD
   0
 XRECORD
   5
-FDD
+FDF
 330
-FD7
+FD9
 100
 AcDbXrecord
 280
@@ -232971,7 +233045,7 @@ EFB
   0
 DICTIONARYVAR
   5
-FE0
+FE2
 330
 2D
 100
@@ -232979,7 +233053,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-05T23:31:52.448118+00:00
+1.4.5 @ 2026-11-05T23:43:05.816572+00:00
   0
 ENDSEC
   0
